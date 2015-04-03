@@ -1,0 +1,3 @@
+com/piarchiverlocal/servlet/ArchiveCategoryServlet.class
+com/piarchiverlocal/process/async/AsyncArchivingProcessor.class
+com/piarchiverlocal/process/async/AsyncUpdateIndexingProcessor.class

@@ -1,0 +1,70 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 //EN">
+<html>
+<head>
+<title>PiDictCloud</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link href="../css/tab.css" type="text/css" rel="stylesheet" />
+<script src="../js/jquery.min.js"></script> 
+ <style type="text/css">
+	
+</style>
+<script type="text/javascript">
+
+$(document).ready(function() { 
+
+	$("#first-tab").addClass('buttonHover');
+});
+
+function navigate_tabs(container, tab){	
+	$(".b").css('display' , 'none');
+	$(".a").css('display' , 'none');
+	$(".c").css('display' , 'none');
+	
+	$("#first-tab").removeClass('buttonHover');
+	$("#second-tab").removeClass('buttonHover');
+	$("#third-tab").removeClass('buttonHover');	
+	
+	$("#"+tab).addClass('buttonHover');
+	$("."+container).show(300);
+}
+
+
+
+</script>
+
+</head>
+<body>
+	
+	<div align="center">
+	
+		<div id="wrap" >
+		
+		<div style="background-color:#ffffff;">
+			<a href="javascript:navigate_tabs('a','first-tab');" class="buttons" id="first-tab">History</a>			
+			<a href="javascript:navigate_tabs('b','second-tab');" class="buttons" id="second-tab">Category</a>
+			<a href="javascript:navigate_tabs('c','third-tab');" class="buttons" id="third-tab">Add link</a>
+		 	<a href="logout.jsp" style="position: absolute;right:10px;top:10px">Logout</a>	
+			<br clear="all" />
+		</div>	
+			<div id="body" align="center">
+				<div class="a">
+				
+				</div>
+				
+				<div class="b">				
+				
+				</div>	
+				
+				
+				<div class="c" >
+				
+				</div>
+				
+				
+				</div>
+		</div>		
+	</div>
+		  
+
+</body>
+</html>

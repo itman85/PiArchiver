@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Set Page Color Popup</title>
+    <link href="../css/popup.css" type="text/css" rel="stylesheet" />
+	<link href="../css/ui.dynatree.css" rel="stylesheet" type="text/css">
+      <link href="../css/loading.css" type="text/css" rel="stylesheet" />
+	<script src="../js/jquery.min.js"></script> 
+	<script src="../js/jquery-ui.custom.min.js" type="text/javascript"></script>
+	<script src="../js/jquery.cookie.js" type="text/javascript"></script>
+	<script src="../js/jquery.dynatree.js" type="text/javascript"></script>	
+	<script src="../js/popup.js"></script>
+  </head>
+  <body >
+  <div class="modal"></div>
+  <fieldset >
+	<legend class="grouptitle">Pi Archiver</legend>	
+	<button class="clouds-flat-button"id="btnSyncCategory">Sync Category</button>
+	<button class="clouds-flat-button" id="btnSyncLink">Sync link</button>
+	<button class="clouds-flat-button submit" id="btnSubmitlink">Submit link</button>
+	<br/>
+	<label class="titleform" >Title:</label>
+	<textarea cols="32" rows="2" name="link_title" id="link_title"></textarea>
+	<label class="titleform" >Info:</label>
+	<textarea cols="32" rows="3" name="link_info" id="link_info"></textarea>
+	</fieldset>	
+	<label class="titleform" >Categories:</label>
+	<div id="tree"> </div>
+  </body>
+</html>

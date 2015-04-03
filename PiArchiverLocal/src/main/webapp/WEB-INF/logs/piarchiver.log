@@ -1,0 +1,1225 @@
+2014-03-26 15:46:37 INFO  PiConfig:33 - Read OK config file:piconfig.properties
+2014-03-26 15:46:37 INFO  node:114 - [pianode] version[1.0.1], pid[11160], build[5c03844/2014-02-25T15:52:53Z]
+2014-03-26 15:46:37 INFO  node:114 - [pianode] initializing ...
+2014-03-26 15:46:37 DEBUG node:104 - [pianode] using home [E:\my workspace\java workspace\PiArchiverLocal], config [E:\my workspace\java workspace\PiArchiverLocal\config], data [[C:\Users\phan\AppData\Roaming\piarchiver\data]], logs [E:\my workspace\java workspace\PiArchiverLocal\logs], work [E:\my workspace\java workspace\PiArchiverLocal\work], plugins [E:\my workspace\java workspace\PiArchiverLocal\plugins]
+2014-03-26 15:46:37 INFO  plugins:114 - [pianode] loaded [], sites []
+2014-03-26 15:46:37 DEBUG lzf:104 - using [UnsafeChunkDecoder] decoder
+2014-03-26 15:46:37 DEBUG env:104 - [pianode] using node location [[C:\Users\phan\AppData\Roaming\piarchiver\data\piacluster\nodes\0]], local_node_id [0]
+2014-03-26 15:46:38 DEBUG threadpool:104 - [pianode] creating thread_pool [generic], type [cached], keep_alive [30s]
+2014-03-26 15:46:38 DEBUG threadpool:104 - [pianode] creating thread_pool [index], type [fixed], size [8], queue_size [200]
+2014-03-26 15:46:38 DEBUG threadpool:104 - [pianode] creating thread_pool [bulk], type [fixed], size [8], queue_size [50]
+2014-03-26 15:46:38 DEBUG threadpool:104 - [pianode] creating thread_pool [get], type [fixed], size [8], queue_size [1k]
+2014-03-26 15:46:38 DEBUG threadpool:104 - [pianode] creating thread_pool [search], type [fixed], size [24], queue_size [1k]
+2014-03-26 15:46:38 DEBUG threadpool:104 - [pianode] creating thread_pool [suggest], type [fixed], size [8], queue_size [1k]
+2014-03-26 15:46:38 DEBUG threadpool:104 - [pianode] creating thread_pool [percolate], type [fixed], size [8], queue_size [1k]
+2014-03-26 15:46:38 DEBUG threadpool:104 - [pianode] creating thread_pool [management], type [scaling], min [1], size [5], keep_alive [5m]
+2014-03-26 15:46:38 DEBUG threadpool:104 - [pianode] creating thread_pool [flush], type [scaling], min [1], size [4], keep_alive [5m]
+2014-03-26 15:46:38 DEBUG threadpool:104 - [pianode] creating thread_pool [merge], type [scaling], min [1], size [4], keep_alive [5m]
+2014-03-26 15:46:38 DEBUG threadpool:104 - [pianode] creating thread_pool [refresh], type [scaling], min [1], size [4], keep_alive [5m]
+2014-03-26 15:46:38 DEBUG threadpool:104 - [pianode] creating thread_pool [warmer], type [scaling], min [1], size [4], keep_alive [5m]
+2014-03-26 15:46:38 DEBUG threadpool:104 - [pianode] creating thread_pool [snapshot], type [scaling], min [1], size [4], keep_alive [5m]
+2014-03-26 15:46:38 DEBUG threadpool:104 - [pianode] creating thread_pool [optimize], type [fixed], size [1], queue_size [null]
+2014-03-26 15:46:38 DEBUG netty:104 - [pianode] using worker_count[16], port[9300-9400], bind_host[null], publish_host[null], compress[false], connect_timeout[30s], connections_per_node[2/3/6/1/1], receive_predictor[512kb->512kb]
+2014-03-26 15:46:38 DEBUG multicast:104 - [pianode] using group [224.2.2.4], with port [54328], ttl [3], and address [null]
+2014-03-26 15:46:38 DEBUG unicast:104 - [pianode] using initial hosts [], with concurrent_connects [10]
+2014-03-26 15:46:38 DEBUG zen:104 - [pianode] using ping.timeout [3s], master_election.filter_client [true], master_election.filter_data [false]
+2014-03-26 15:46:38 DEBUG elect:104 - [pianode] using minimum_master_nodes [-1]
+2014-03-26 15:46:38 DEBUG fd:104 - [pianode] [master] uses ping_interval [1s], ping_timeout [30s], ping_retries [3]
+2014-03-26 15:46:38 DEBUG fd:104 - [pianode] [node  ] uses ping_interval [1s], ping_timeout [30s], ping_retries [3]
+2014-03-26 15:46:38 DEBUG jvm:104 - [pianode] enabled [true], last_gc_enabled [false], interval [1s], gc_threshold [{old=GcThreshold{name='old', warnThreshold=10000, infoThreshold=5000, debugThreshold=2000}, default=GcThreshold{name='default', warnThreshold=10000, infoThreshold=5000, debugThreshold=2000}, young=GcThreshold{name='young', warnThreshold=1000, infoThreshold=700, debugThreshold=400}}]
+2014-03-26 15:46:38 DEBUG os:104 - [pianode] Using probe [org.elasticsearch.monitor.os.JmxOsProbe@27488b05] with refresh_interval [1s]
+2014-03-26 15:46:38 DEBUG process:104 - [pianode] Using probe [org.elasticsearch.monitor.process.JmxProcessProbe@98cfaad] with refresh_interval [1s]
+2014-03-26 15:46:38 DEBUG jvm:104 - [pianode] Using refresh_interval [1s]
+2014-03-26 15:46:38 DEBUG network:104 - [pianode] Using probe [org.elasticsearch.monitor.network.JmxNetworkProbe@ca43bbd] with refresh_interval [5s]
+2014-03-26 15:46:38 DEBUG network:104 - [pianode] net_info
+host [phannc]
+lo	display_name [Software Loopback Interface 1]
+		address [/127.0.0.1] [/0:0:0:0:0:0:0:1] 
+		mtu [-1] multicast [true] ptp [false] loopback [true] up [true] virtual [false]
+eth0	display_name [Microsoft Kernel Debug Network Adapter]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth1	display_name [Realtek PCIe GBE Family Controller]
+		address [/192.168.2.108] [/fe80:0:0:0:a92b:3db8:4dc1:5a23%3] 
+		mtu [1500] multicast [true] ptp [false] loopback [false] up [true] virtual [false]
+net0	display_name [Microsoft ISATAP Adapter]
+		address [/fe80:0:0:0:0:5efe:c0a8:26c%4] 
+		mtu [1280] multicast [false] ptp [true] loopback [false] up [false] virtual [false]
+net1	display_name [Teredo Tunneling Pseudo-Interface]
+		address [/fe80:0:0:0:18ab:cf11:c545:253b%5] 
+		mtu [1280] multicast [false] ptp [true] loopback [false] up [true] virtual [false]
+net2	display_name [Microsoft ISATAP Adapter #2]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net3	display_name [WAN Miniport (SSTP)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth2	display_name [WAN Miniport (IP)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+ppp0	display_name [WAN Miniport (PPPOE)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net4	display_name [WAN Miniport (PPTP)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net5	display_name [WAN Miniport (L2TP)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net6	display_name [WAN Miniport (IKEv2)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth3	display_name [WAN Miniport (Network Monitor)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth4	display_name [WAN Miniport (IPv6)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+ppp1	display_name [RAS Async Adapter]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth5	display_name [Microsoft Hyper-V Network Switch Default Miniport]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth6	display_name [Realtek PCIe GBE Family Controller-WFP Native MAC Layer LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth7	display_name [Realtek PCIe GBE Family Controller-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth8	display_name [Realtek PCIe GBE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth9	display_name [WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth10	display_name [WAN Miniport (IP)-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth11	display_name [WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth12	display_name [WAN Miniport (IPv6)-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth13	display_name [WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth14	display_name [WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+
+2014-03-26 15:46:38 DEBUG fs:104 - [pianode] Using probe [org.elasticsearch.monitor.fs.JmxFsProbe@2260c7bf] with refresh_interval [1s]
+2014-03-26 15:46:38 DEBUG store:104 - [pianode] using indices.store.throttle.type [MERGE], with index.store.throttle.max_bytes_per_sec [20mb]
+2014-03-26 15:46:38 DEBUG memory:104 - [pianode] using bytebuffer cache with small_buffer_size [1kb], large_buffer_size [1mb], small_cache_size [10mb], large_cache_size [500mb], direct [true]
+2014-03-26 15:46:38 DEBUG script:104 - [pianode] using script cache with max_size [500], expire [null]
+2014-03-26 15:46:38 DEBUG decider:104 - [pianode] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+2014-03-26 15:46:38 DEBUG decider:104 - [pianode] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+2014-03-26 15:46:38 DEBUG decider:104 - [pianode] using [cluster_concurrent_rebalance] with [2]
+2014-03-26 15:46:38 DEBUG local:104 - [pianode] using initial_shards [quorum], list_timeout [30s]
+2014-03-26 15:46:38 DEBUG recovery:104 - [pianode] using max_bytes_per_sec[20mb], concurrent_streams [3], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+2014-03-26 15:46:38 DEBUG netty:104 - [pianode] using max_chunk_size[8kb], max_header_size[8kb], max_initial_line_length[4kb], max_content_length[100mb], receive_predictor[512kb->512kb]
+2014-03-26 15:46:38 DEBUG memory:104 - [pianode] using index_buffer_size [179.3mb], with min_shard_index_buffer_size [4mb], max_shard_index_buffer_size [512mb], shard_inactive_time [30m]
+2014-03-26 15:46:38 DEBUG filter:104 - [pianode] using [node] weighted filter cache with size [20%], actual_size [358.7mb], expire [null], clean_interval [1m]
+2014-03-26 15:46:38 DEBUG cache:104 - [pianode] using size [-1] [-1b], expire [null]
+2014-03-26 15:46:38 DEBUG meta:104 - [pianode] using gateway.local.auto_import_dangled [YES], with gateway.local.dangling_timeout [2h]
+2014-03-26 15:46:38 DEBUG meta:104 - [pianode] took 0s to load state
+2014-03-26 15:46:38 DEBUG shards:104 - [pianode] took 0s to load started shards state
+2014-03-26 15:46:38 DEBUG udp:104 - [pianode] using enabled [false], host [null], port [9700-9800], bulk_actions [1000], bulk_size [5mb], flush_interval [5s], concurrent_requests [4]
+2014-03-26 15:46:38 DEBUG decider:104 - [pianode] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+2014-03-26 15:46:38 DEBUG decider:104 - [pianode] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+2014-03-26 15:46:38 DEBUG decider:104 - [pianode] using [cluster_concurrent_rebalance] with [2]
+2014-03-26 15:46:38 DEBUG decider:104 - [pianode] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+2014-03-26 15:46:38 DEBUG decider:104 - [pianode] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+2014-03-26 15:46:38 DEBUG decider:104 - [pianode] using [cluster_concurrent_rebalance] with [2]
+2014-03-26 15:46:38 INFO  node:114 - [pianode] initialized
+2014-03-26 15:46:38 INFO  node:114 - [pianode] starting ...
+2014-03-26 15:46:38 DEBUG SelectorUtil:104 - Using select timeout of 500
+2014-03-26 15:46:38 DEBUG SelectorUtil:104 - Epoll-bug workaround enabled = false
+2014-03-26 15:46:39 DEBUG netty:104 - [pianode] Bound to address [/0:0:0:0:0:0:0:0:9300]
+2014-03-26 15:46:39 INFO  transport:114 - [pianode] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.2.108:9300]}
+2014-03-26 15:46:42 DEBUG zen:104 - [pianode] filtered ping responses: (filter_client[true], filter_data[false]) {none}
+2014-03-26 15:46:42 DEBUG service:104 - [pianode] processing [zen-disco-join (elected_as_master)]: execute
+2014-03-26 15:46:42 DEBUG service:104 - [pianode] cluster state updated, version [1], source [zen-disco-join (elected_as_master)]
+2014-03-26 15:46:42 INFO  service:114 - [pianode] new_master [pianode][tvl3zNjcQNu40A5cxIBFAQ][phannc][inet[/192.168.2.108:9300]], reason: zen-disco-join (elected_as_master)
+2014-03-26 15:46:42 DEBUG netty:104 - [pianode] connected to node [[pianode][tvl3zNjcQNu40A5cxIBFAQ][phannc][inet[/192.168.2.108:9300]]]
+2014-03-26 15:46:42 DEBUG service:104 - [pianode] publishing cluster state version 1
+2014-03-26 15:46:42 DEBUG service:104 - [pianode] set local cluster state to version 1
+2014-03-26 15:46:42 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 15:46:42 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 15:46:42 DEBUG service:104 - [pianode] processing [zen-disco-join (elected_as_master)]: done applying updated cluster_state (version: 1)
+2014-03-26 15:46:42 INFO  discovery:114 - [pianode] piacluster/tvl3zNjcQNu40A5cxIBFAQ
+2014-03-26 15:46:42 DEBUG service:104 - [pianode] processing [local-gateway-elected-state]: execute
+2014-03-26 15:46:42 DEBUG service:104 - [pianode] cluster state updated, version [2], source [local-gateway-elected-state]
+2014-03-26 15:46:42 DEBUG service:104 - [pianode] publishing cluster state version 2
+2014-03-26 15:46:42 DEBUG service:104 - [pianode] set local cluster state to version 2
+2014-03-26 15:46:42 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 15:46:42 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 15:46:42 INFO  gateway:114 - [pianode] recovered [0] indices into cluster_state
+2014-03-26 15:46:42 DEBUG service:104 - [pianode] processing [local-gateway-elected-state]: done applying updated cluster_state (version: 2)
+2014-03-26 15:46:42 INFO  http:114 - [pianode] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.2.108:9200]}
+2014-03-26 15:46:42 DEBUG service:104 - [pianode] processing [updating local node id]: execute
+2014-03-26 15:46:42 DEBUG service:104 - [pianode] cluster state updated, version [3], source [updating local node id]
+2014-03-26 15:46:42 DEBUG service:104 - [pianode] publishing cluster state version 3
+2014-03-26 15:46:42 DEBUG service:104 - [pianode] set local cluster state to version 3
+2014-03-26 15:46:42 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 15:46:42 DEBUG service:104 - [pianode] processing [updating local node id]: done applying updated cluster_state (version: 3)
+2014-03-26 15:46:42 INFO  node:114 - [pianode] started
+2014-03-26 15:46:42 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 15:46:52 DEBUG service:104 - [pianode] processing [routing-table-updater]: execute
+2014-03-26 15:46:52 DEBUG service:104 - [pianode] processing [routing-table-updater]: no change in cluster_state
+2014-03-26 15:47:43 INFO  AsyncArchiveServlet:36 - New archive request comes
+2014-03-26 15:47:43 INFO  AsyncArchiveServlet:44 - Data request:{"resultnewlist":[{"categoryid":6,"cloudid":24,"createdon":"02/03/2014 16:16:02 +0700","note":"nhip song tre","url":"http://dantri.com.vn/nhip-song-tre.htm"},{"categoryid":9,"cloudid":24,"createdon":"02/03/2014 16:15:40 +0700","note":"khuyen hoc","url":"http://dantri.com.vn/giao-duc-khuyen-hoc.htm"}],"resultupdatelist":[]}
+2014-03-26 15:47:43 INFO  AsyncDownloadWebpageProcessor:33 - Async Processor Start for link: http://dantri.com.vn/nhip-song-tre.htm
+2014-03-26 15:47:43 INFO  AsyncDownloadWebpageProcessor:33 - Async Processor Start for link: http://dantri.com.vn/giao-duc-khuyen-hoc.htm
+2014-03-26 15:47:45 INFO  AsyncDownloadWebpageProcessor:58 - Start download file into folder:01998125-f048-4fe3-81b3-d49067cadef7 For url http://dantri.com.vn/giao-duc-khuyen-hoc.htm
+2014-03-26 15:47:45 INFO  AsyncDownloadWebpageProcessor:58 - Start download file into folder:c6f5c1ea-782a-4489-a371-cd70fefe451d For url http://dantri.com.vn/nhip-song-tre.htm
+2014-03-26 15:47:52 ERROR Crawler:265 - C:/Users/phan/AppData/Roaming/piarchiver/01998125-f048-4fe3-81b3-d49067cadef7\Resources\vdvietchu-9e7aa.flv.jpg : http://video-thumbs.vcmedia.vn//thumb_w/200/dantri/qePPb5vVAImhccccccccccccYx2D1Z/2014/02/vdvietchu-9e7aa.flv.jpg java.io.FileNotFoundException: http://video-thumbs.vcmedia.vn//thumb_w/200/dantri/qePPb5vVAImhccccccccccccYx2D1Z/2014/02/vdvietchu-9e7aa.flv.jpg [Ljava.lang.StackTraceElement;@efa8718
+2014-03-26 15:47:54 INFO  AsyncDownloadWebpageProcessor:61 - End download file into folder:c6f5c1ea-782a-4489-a371-cd70fefe451d For url http://dantri.com.vn/nhip-song-tre.htm
+2014-03-26 15:47:56 INFO  AsyncDownloadWebpageProcessor:75 - Start index link document For url: http://dantri.com.vn/nhip-song-tre.htm
+2014-03-26 15:47:56 DEBUG service:104 - [pianode] processing [create-index [piaidx], cause [auto(index api)]]: execute
+2014-03-26 15:47:56 DEBUG indices:104 - [pianode] creating Index [piaidx], shards [5]/[1]
+2014-03-26 15:47:56 INFO  AsyncDownloadWebpageProcessor:61 - End download file into folder:01998125-f048-4fe3-81b3-d49067cadef7 For url http://dantri.com.vn/giao-duc-khuyen-hoc.htm
+2014-03-26 15:47:58 INFO  AsyncDownloadWebpageProcessor:75 - Start index link document For url: http://dantri.com.vn/giao-duc-khuyen-hoc.htm
+2014-03-26 15:47:58 DEBUG mapper:104 - [pianode] [piaidx] using dynamic[true], default mapping: default_mapping_location[null], loaded_from[jar:file:/C:/Users/phan/.m2/repository/org/elasticsearch/elasticsearch/1.0.1/elasticsearch-1.0.1.jar!/org/elasticsearch/index/mapper/default-mapping.json], default percolator mapping: location[null], loaded_from[null]
+2014-03-26 15:47:58 DEBUG resident:104 - [pianode] [piaidx] using [resident] query cache with max_size [100], expire [null]
+2014-03-26 15:47:58 DEBUG fs:104 - [pianode] [piaidx] using index.store.throttle.type [node], with index.store.throttle.max_bytes_per_sec [0b]
+2014-03-26 15:47:58 INFO  metadata:114 - [pianode] [piaidx] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+2014-03-26 15:47:58 DEBUG weighted:104 - [pianode] [piaidx] full cache clear, reason [close]
+2014-03-26 15:47:58 DEBUG service:104 - [pianode] cluster state updated, version [4], source [create-index [piaidx], cause [auto(index api)]]
+2014-03-26 15:47:58 DEBUG service:104 - [pianode] publishing cluster state version 4
+2014-03-26 15:47:58 DEBUG service:104 - [pianode] set local cluster state to version 4
+2014-03-26 15:47:58 DEBUG cluster:104 - [pianode] [piaidx] creating index
+2014-03-26 15:47:58 DEBUG indices:104 - [pianode] creating Index [piaidx], shards [5]/[1]
+2014-03-26 15:47:58 DEBUG mapper:104 - [pianode] [piaidx] using dynamic[true], default mapping: default_mapping_location[null], loaded_from[jar:file:/C:/Users/phan/.m2/repository/org/elasticsearch/elasticsearch/1.0.1/elasticsearch-1.0.1.jar!/org/elasticsearch/index/mapper/default-mapping.json], default percolator mapping: location[null], loaded_from[null]
+2014-03-26 15:47:58 DEBUG resident:104 - [pianode] [piaidx] using [resident] query cache with max_size [100], expire [null]
+2014-03-26 15:47:58 DEBUG fs:104 - [pianode] [piaidx] using index.store.throttle.type [node], with index.store.throttle.max_bytes_per_sec [0b]
+2014-03-26 15:47:58 DEBUG cluster:104 - [pianode] [piaidx][0] creating shard
+2014-03-26 15:47:58 DEBUG service:104 - [pianode] [piaidx] creating shard_id [0]
+2014-03-26 15:47:58 DEBUG deletionpolicy:104 - [pianode] [piaidx][0] Using [keep_only_last] deletion policy
+2014-03-26 15:47:58 DEBUG policy:104 - [pianode] [piaidx][0] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2014-03-26 15:47:58 DEBUG scheduler:104 - [pianode] [piaidx][0] using [concurrent] merge scheduler with max_thread_count[3]
+2014-03-26 15:47:58 DEBUG service:104 - [pianode] [piaidx][0] state: [CREATED]
+2014-03-26 15:47:58 DEBUG translog:104 - [pianode] [piaidx][0] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2014-03-26 15:47:58 DEBUG service:104 - [pianode] [piaidx][0] state: [CREATED]->[RECOVERING], reason [from gateway]
+2014-03-26 15:47:58 DEBUG cluster:104 - [pianode] [piaidx][3] creating shard
+2014-03-26 15:47:58 DEBUG gateway:104 - [pianode] [piaidx][0] starting recovery from local ...
+2014-03-26 15:47:58 DEBUG service:104 - [pianode] [piaidx] creating shard_id [3]
+2014-03-26 15:47:58 DEBUG internal:104 - [pianode] [piaidx][0] starting engine
+2014-03-26 15:47:58 DEBUG deletionpolicy:104 - [pianode] [piaidx][3] Using [keep_only_last] deletion policy
+2014-03-26 15:47:58 DEBUG policy:104 - [pianode] [piaidx][3] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2014-03-26 15:47:58 DEBUG scheduler:104 - [pianode] [piaidx][3] using [concurrent] merge scheduler with max_thread_count[3]
+2014-03-26 15:47:58 DEBUG service:104 - [pianode] [piaidx][3] state: [CREATED]
+2014-03-26 15:47:58 DEBUG translog:104 - [pianode] [piaidx][3] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2014-03-26 15:47:58 DEBUG service:104 - [pianode] [piaidx][3] state: [CREATED]->[RECOVERING], reason [from gateway]
+2014-03-26 15:47:58 DEBUG cluster:104 - [pianode] [piaidx][1] creating shard
+2014-03-26 15:47:58 DEBUG service:104 - [pianode] [piaidx] creating shard_id [1]
+2014-03-26 15:47:58 DEBUG gateway:104 - [pianode] [piaidx][3] starting recovery from local ...
+2014-03-26 15:47:58 DEBUG internal:104 - [pianode] [piaidx][3] starting engine
+2014-03-26 15:47:58 DEBUG deletionpolicy:104 - [pianode] [piaidx][1] Using [keep_only_last] deletion policy
+2014-03-26 15:47:58 DEBUG policy:104 - [pianode] [piaidx][1] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2014-03-26 15:47:58 DEBUG scheduler:104 - [pianode] [piaidx][1] using [concurrent] merge scheduler with max_thread_count[3]
+2014-03-26 15:47:58 DEBUG service:104 - [pianode] [piaidx][1] state: [CREATED]
+2014-03-26 15:47:58 DEBUG translog:104 - [pianode] [piaidx][1] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2014-03-26 15:47:58 DEBUG service:104 - [pianode] [piaidx][1] state: [CREATED]->[RECOVERING], reason [from gateway]
+2014-03-26 15:47:58 DEBUG cluster:104 - [pianode] [piaidx][2] creating shard
+2014-03-26 15:47:58 DEBUG service:104 - [pianode] [piaidx] creating shard_id [2]
+2014-03-26 15:47:58 DEBUG gateway:104 - [pianode] [piaidx][1] starting recovery from local ...
+2014-03-26 15:47:58 DEBUG internal:104 - [pianode] [piaidx][1] starting engine
+2014-03-26 15:47:58 DEBUG deletionpolicy:104 - [pianode] [piaidx][2] Using [keep_only_last] deletion policy
+2014-03-26 15:47:58 DEBUG policy:104 - [pianode] [piaidx][2] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2014-03-26 15:47:58 DEBUG scheduler:104 - [pianode] [piaidx][2] using [concurrent] merge scheduler with max_thread_count[3]
+2014-03-26 15:47:58 DEBUG service:104 - [pianode] [piaidx][2] state: [CREATED]
+2014-03-26 15:47:58 DEBUG translog:104 - [pianode] [piaidx][2] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2014-03-26 15:47:58 DEBUG service:104 - [pianode] [piaidx][2] state: [CREATED]->[RECOVERING], reason [from gateway]
+2014-03-26 15:47:58 DEBUG gateway:104 - [pianode] [piaidx][2] starting recovery from local ...
+2014-03-26 15:47:58 DEBUG internal:104 - [pianode] [piaidx][2] starting engine
+2014-03-26 15:47:58 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 15:47:58 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] processing [create-index [piaidx], cause [auto(index api)]]: done applying updated cluster_state (version: 4)
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] processing [create-index [piaidx], cause [auto(index api)]]: execute
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][1] scheduling refresher every 1s
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][3] scheduling refresher every 1s
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][2] scheduling refresher every 1s
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][0] scheduling refresher every 1s
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][1] scheduling optimizer / merger every 1s
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][0] scheduling optimizer / merger every 1s
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][2] scheduling optimizer / merger every 1s
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][3] scheduling optimizer / merger every 1s
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][2] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from gateway, no translog]
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][0] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from gateway, no translog]
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][1] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from gateway, no translog]
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][3] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from gateway, no translog]
+2014-03-26 15:47:59 DEBUG gateway:104 - [pianode] [piaidx][2] recovery completed from [local], took [754ms]
+2014-03-26 15:47:59 DEBUG gateway:104 - [pianode] [piaidx][0] recovery completed from [local], took [787ms]
+2014-03-26 15:47:59 DEBUG gateway:104 - [pianode] [piaidx][1] recovery completed from [local], took [765ms]
+2014-03-26 15:47:59 DEBUG gateway:104 - [pianode] [piaidx][3] recovery completed from [local], took [777ms]
+2014-03-26 15:47:59 DEBUG shard:104 - [pianode] sending shard started for [piaidx][2], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:47:59 DEBUG shard:104 - [pianode] sending shard started for [piaidx][1], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:47:59 DEBUG shard:104 - [pianode] sending shard started for [piaidx][0], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:47:59 DEBUG shard:104 - [pianode] received shard started for [piaidx][0], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:47:59 DEBUG shard:104 - [pianode] received shard started for [piaidx][1], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:47:59 DEBUG shard:104 - [pianode] received shard started for [piaidx][2], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:47:59 DEBUG shard:104 - [pianode] sending shard started for [piaidx][3], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:47:59 DEBUG shard:104 - [pianode] received shard started for [piaidx][3], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][0], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2014-03-26 15:47:59 DEBUG shard:104 - [pianode] [piaidx][0] will apply shard started [piaidx][0], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:47:59 DEBUG shard:104 - [pianode] [piaidx][1] will apply shard started [piaidx][1], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:47:59 DEBUG shard:104 - [pianode] [piaidx][2] will apply shard started [piaidx][2], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:47:59 DEBUG shard:104 - [pianode] [piaidx][3] will apply shard started [piaidx][3], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] cluster state updated, version [5], source [shard-started ([piaidx][0], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] publishing cluster state version 5
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] set local cluster state to version 5
+2014-03-26 15:47:59 DEBUG cluster:104 - [pianode] [piaidx][4] creating shard
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx] creating shard_id [4]
+2014-03-26 15:47:59 DEBUG deletionpolicy:104 - [pianode] [piaidx][4] Using [keep_only_last] deletion policy
+2014-03-26 15:47:59 DEBUG policy:104 - [pianode] [piaidx][4] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2014-03-26 15:47:59 DEBUG scheduler:104 - [pianode] [piaidx][4] using [concurrent] merge scheduler with max_thread_count[3]
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][4] state: [CREATED]
+2014-03-26 15:47:59 DEBUG translog:104 - [pianode] [piaidx][4] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][4] state: [CREATED]->[RECOVERING], reason [from gateway]
+2014-03-26 15:47:59 DEBUG gateway:104 - [pianode] [piaidx][4] starting recovery from local ...
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][0] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+2014-03-26 15:47:59 DEBUG internal:104 - [pianode] [piaidx][4] starting engine
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][3] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][1] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][2] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+2014-03-26 15:47:59 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 15:47:59 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][4] scheduling refresher every 1s
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][4] scheduling optimizer / merger every 1s
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][4] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from gateway, no translog]
+2014-03-26 15:47:59 DEBUG gateway:104 - [pianode] [piaidx][4] recovery completed from [local], took [170ms]
+2014-03-26 15:47:59 DEBUG shard:104 - [pianode] sending shard started for [piaidx][4], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:47:59 DEBUG shard:104 - [pianode] received shard started for [piaidx][4], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][0], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: done applying updated cluster_state (version: 5)
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][1], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][1], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][3], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][3], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][2], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][2], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][4], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2014-03-26 15:47:59 DEBUG shard:104 - [pianode] [piaidx][4] will apply shard started [piaidx][4], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] cluster state updated, version [6], source [shard-started ([piaidx][4], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] publishing cluster state version 6
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] set local cluster state to version 6
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] [piaidx][4] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+2014-03-26 15:47:59 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 15:47:59 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][4], node[tvl3zNjcQNu40A5cxIBFAQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: done applying updated cluster_state (version: 6)
+2014-03-26 15:47:59 DEBUG service:104 - [pianode] processing [update-mapping [piaidx][link] / node [tvl3zNjcQNu40A5cxIBFAQ], order [1]]: execute
+2014-03-26 15:48:00 DEBUG metadata:104 - [pianode] [piaidx] update_mapping [link] (dynamic) with source [{"link":{"properties":{"categoryid":{"type":"long"},"cloudid":{"type":"long"},"content":{"type":"string"},"createdon":{"type":"string"},"localPagePath":{"type":"string"},"note":{"type":"string"},"originalPagePath":{"type":"string"},"url":{"type":"string"}}}}]
+2014-03-26 15:48:00 DEBUG service:104 - [pianode] cluster state updated, version [7], source [update-mapping [piaidx][link] / node [tvl3zNjcQNu40A5cxIBFAQ], order [1]]
+2014-03-26 15:48:00 DEBUG service:104 - [pianode] publishing cluster state version 7
+2014-03-26 15:48:00 DEBUG service:104 - [pianode] set local cluster state to version 7
+2014-03-26 15:48:00 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 15:48:00 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 15:48:00 INFO  AsyncDownloadWebpageProcessor:77 - End index link document For url: http://dantri.com.vn/nhip-song-tre.htm
+2014-03-26 15:48:00 INFO  AsyncDownloadWebpageProcessor:77 - End index link document For url: http://dantri.com.vn/giao-duc-khuyen-hoc.htm
+2014-03-26 15:48:00 INFO  AsyncDownloadWebpageProcessor:52 - Async Processor End for link: http://dantri.com.vn/giao-duc-khuyen-hoc.htm
+2014-03-26 15:48:00 INFO  AsyncDownloadWebpageProcessor:52 - Async Processor End for link: http://dantri.com.vn/nhip-song-tre.htm
+2014-03-26 15:48:00 DEBUG service:104 - [pianode] processing [update-mapping [piaidx][link] / node [tvl3zNjcQNu40A5cxIBFAQ], order [1]]: done applying updated cluster_state (version: 7)
+2014-03-26 15:48:08 DEBUG memory:104 - [pianode] recalculating shard indexing buffer (reason=active/inactive[false] created/deleted[true]), total is [179.3mb] with [5] active shards, each shard set to indexing=[35.8mb], translog=[64kb]
+2014-03-26 15:48:08 DEBUG internal:104 - [pianode] [piaidx][0] updating index_buffer_size from [64mb] to [35.8mb]
+2014-03-26 15:48:08 DEBUG internal:104 - [pianode] [piaidx][1] updating index_buffer_size from [64mb] to [35.8mb]
+2014-03-26 15:48:08 DEBUG internal:104 - [pianode] [piaidx][2] updating index_buffer_size from [64mb] to [35.8mb]
+2014-03-26 15:48:08 DEBUG internal:104 - [pianode] [piaidx][3] updating index_buffer_size from [64mb] to [35.8mb]
+2014-03-26 15:48:08 DEBUG internal:104 - [pianode] [piaidx][4] updating index_buffer_size from [64mb] to [35.8mb]
+2014-03-26 15:57:29 INFO  PiConfig:33 - Read OK config file:piconfig.properties
+2014-03-26 15:57:29 INFO  node:114 - [pianode] version[1.0.1], pid[9696], build[5c03844/2014-02-25T15:52:53Z]
+2014-03-26 15:57:29 INFO  node:114 - [pianode] initializing ...
+2014-03-26 15:57:29 DEBUG node:104 - [pianode] using home [E:\my workspace\java workspace\PiArchiverLocal], config [E:\my workspace\java workspace\PiArchiverLocal\config], data [[C:\Users\phan\AppData\Roaming\piarchiver\data]], logs [E:\my workspace\java workspace\PiArchiverLocal\logs], work [E:\my workspace\java workspace\PiArchiverLocal\work], plugins [E:\my workspace\java workspace\PiArchiverLocal\plugins]
+2014-03-26 15:57:29 INFO  plugins:114 - [pianode] loaded [], sites []
+2014-03-26 15:57:29 DEBUG lzf:104 - using [UnsafeChunkDecoder] decoder
+2014-03-26 15:57:29 DEBUG env:104 - [pianode] using node location [[C:\Users\phan\AppData\Roaming\piarchiver\data\piacluster\nodes\0]], local_node_id [0]
+2014-03-26 15:57:30 DEBUG threadpool:104 - [pianode] creating thread_pool [generic], type [cached], keep_alive [30s]
+2014-03-26 15:57:30 DEBUG threadpool:104 - [pianode] creating thread_pool [index], type [fixed], size [8], queue_size [200]
+2014-03-26 15:57:30 DEBUG threadpool:104 - [pianode] creating thread_pool [bulk], type [fixed], size [8], queue_size [50]
+2014-03-26 15:57:30 DEBUG threadpool:104 - [pianode] creating thread_pool [get], type [fixed], size [8], queue_size [1k]
+2014-03-26 15:57:30 DEBUG threadpool:104 - [pianode] creating thread_pool [search], type [fixed], size [24], queue_size [1k]
+2014-03-26 15:57:30 DEBUG threadpool:104 - [pianode] creating thread_pool [suggest], type [fixed], size [8], queue_size [1k]
+2014-03-26 15:57:30 DEBUG threadpool:104 - [pianode] creating thread_pool [percolate], type [fixed], size [8], queue_size [1k]
+2014-03-26 15:57:30 DEBUG threadpool:104 - [pianode] creating thread_pool [management], type [scaling], min [1], size [5], keep_alive [5m]
+2014-03-26 15:57:30 DEBUG threadpool:104 - [pianode] creating thread_pool [flush], type [scaling], min [1], size [4], keep_alive [5m]
+2014-03-26 15:57:30 DEBUG threadpool:104 - [pianode] creating thread_pool [merge], type [scaling], min [1], size [4], keep_alive [5m]
+2014-03-26 15:57:30 DEBUG threadpool:104 - [pianode] creating thread_pool [refresh], type [scaling], min [1], size [4], keep_alive [5m]
+2014-03-26 15:57:30 DEBUG threadpool:104 - [pianode] creating thread_pool [warmer], type [scaling], min [1], size [4], keep_alive [5m]
+2014-03-26 15:57:30 DEBUG threadpool:104 - [pianode] creating thread_pool [snapshot], type [scaling], min [1], size [4], keep_alive [5m]
+2014-03-26 15:57:30 DEBUG threadpool:104 - [pianode] creating thread_pool [optimize], type [fixed], size [1], queue_size [null]
+2014-03-26 15:57:30 DEBUG netty:104 - [pianode] using worker_count[16], port[9300-9400], bind_host[null], publish_host[null], compress[false], connect_timeout[30s], connections_per_node[2/3/6/1/1], receive_predictor[512kb->512kb]
+2014-03-26 15:57:30 DEBUG multicast:104 - [pianode] using group [224.2.2.4], with port [54328], ttl [3], and address [null]
+2014-03-26 15:57:30 DEBUG unicast:104 - [pianode] using initial hosts [], with concurrent_connects [10]
+2014-03-26 15:57:30 DEBUG zen:104 - [pianode] using ping.timeout [3s], master_election.filter_client [true], master_election.filter_data [false]
+2014-03-26 15:57:30 DEBUG elect:104 - [pianode] using minimum_master_nodes [-1]
+2014-03-26 15:57:30 DEBUG fd:104 - [pianode] [master] uses ping_interval [1s], ping_timeout [30s], ping_retries [3]
+2014-03-26 15:57:30 DEBUG fd:104 - [pianode] [node  ] uses ping_interval [1s], ping_timeout [30s], ping_retries [3]
+2014-03-26 15:57:30 DEBUG jvm:104 - [pianode] enabled [true], last_gc_enabled [false], interval [1s], gc_threshold [{old=GcThreshold{name='old', warnThreshold=10000, infoThreshold=5000, debugThreshold=2000}, default=GcThreshold{name='default', warnThreshold=10000, infoThreshold=5000, debugThreshold=2000}, young=GcThreshold{name='young', warnThreshold=1000, infoThreshold=700, debugThreshold=400}}]
+2014-03-26 15:57:30 DEBUG os:104 - [pianode] Using probe [org.elasticsearch.monitor.os.JmxOsProbe@71d5c214] with refresh_interval [1s]
+2014-03-26 15:57:30 DEBUG process:104 - [pianode] Using probe [org.elasticsearch.monitor.process.JmxProcessProbe@7b07fc8] with refresh_interval [1s]
+2014-03-26 15:57:30 DEBUG jvm:104 - [pianode] Using refresh_interval [1s]
+2014-03-26 15:57:30 DEBUG network:104 - [pianode] Using probe [org.elasticsearch.monitor.network.JmxNetworkProbe@aa0ff36] with refresh_interval [5s]
+2014-03-26 15:57:30 DEBUG network:104 - [pianode] net_info
+host [phannc]
+lo	display_name [Software Loopback Interface 1]
+		address [/127.0.0.1] [/0:0:0:0:0:0:0:1] 
+		mtu [-1] multicast [true] ptp [false] loopback [true] up [true] virtual [false]
+eth0	display_name [Microsoft Kernel Debug Network Adapter]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth1	display_name [Realtek PCIe GBE Family Controller]
+		address [/192.168.2.108] [/fe80:0:0:0:a92b:3db8:4dc1:5a23%3] 
+		mtu [1500] multicast [true] ptp [false] loopback [false] up [true] virtual [false]
+net0	display_name [Microsoft ISATAP Adapter]
+		address [/fe80:0:0:0:0:5efe:c0a8:26c%4] 
+		mtu [1280] multicast [false] ptp [true] loopback [false] up [false] virtual [false]
+net1	display_name [Teredo Tunneling Pseudo-Interface]
+		address [/fe80:0:0:0:3c88:aa29:c545:253b%5] 
+		mtu [1280] multicast [false] ptp [true] loopback [false] up [true] virtual [false]
+net2	display_name [Microsoft ISATAP Adapter #2]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net3	display_name [WAN Miniport (SSTP)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth2	display_name [WAN Miniport (IP)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+ppp0	display_name [WAN Miniport (PPPOE)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net4	display_name [WAN Miniport (PPTP)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net5	display_name [WAN Miniport (L2TP)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net6	display_name [WAN Miniport (IKEv2)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth3	display_name [WAN Miniport (Network Monitor)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth4	display_name [WAN Miniport (IPv6)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+ppp1	display_name [RAS Async Adapter]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth5	display_name [Microsoft Hyper-V Network Switch Default Miniport]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth6	display_name [Realtek PCIe GBE Family Controller-WFP Native MAC Layer LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth7	display_name [Realtek PCIe GBE Family Controller-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth8	display_name [Realtek PCIe GBE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth9	display_name [WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth10	display_name [WAN Miniport (IP)-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth11	display_name [WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth12	display_name [WAN Miniport (IPv6)-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth13	display_name [WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth14	display_name [WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+
+2014-03-26 15:57:30 DEBUG fs:104 - [pianode] Using probe [org.elasticsearch.monitor.fs.JmxFsProbe@2c2b2900] with refresh_interval [1s]
+2014-03-26 15:57:30 DEBUG store:104 - [pianode] using indices.store.throttle.type [MERGE], with index.store.throttle.max_bytes_per_sec [20mb]
+2014-03-26 15:57:30 DEBUG memory:104 - [pianode] using bytebuffer cache with small_buffer_size [1kb], large_buffer_size [1mb], small_cache_size [10mb], large_cache_size [500mb], direct [true]
+2014-03-26 15:57:30 DEBUG script:104 - [pianode] using script cache with max_size [500], expire [null]
+2014-03-26 15:57:30 DEBUG decider:104 - [pianode] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+2014-03-26 15:57:30 DEBUG decider:104 - [pianode] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+2014-03-26 15:57:30 DEBUG decider:104 - [pianode] using [cluster_concurrent_rebalance] with [2]
+2014-03-26 15:57:30 DEBUG local:104 - [pianode] using initial_shards [quorum], list_timeout [30s]
+2014-03-26 15:57:30 DEBUG recovery:104 - [pianode] using max_bytes_per_sec[20mb], concurrent_streams [3], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+2014-03-26 15:57:30 DEBUG netty:104 - [pianode] using max_chunk_size[8kb], max_header_size[8kb], max_initial_line_length[4kb], max_content_length[100mb], receive_predictor[512kb->512kb]
+2014-03-26 15:57:30 DEBUG memory:104 - [pianode] using index_buffer_size [179.3mb], with min_shard_index_buffer_size [4mb], max_shard_index_buffer_size [512mb], shard_inactive_time [30m]
+2014-03-26 15:57:30 DEBUG filter:104 - [pianode] using [node] weighted filter cache with size [20%], actual_size [358.7mb], expire [null], clean_interval [1m]
+2014-03-26 15:57:30 DEBUG cache:104 - [pianode] using size [-1] [-1b], expire [null]
+2014-03-26 15:57:30 DEBUG meta:104 - [pianode] using gateway.local.auto_import_dangled [YES], with gateway.local.dangling_timeout [2h]
+2014-03-26 15:57:30 DEBUG meta:104 - [pianode] took 18ms to load state
+2014-03-26 15:57:30 DEBUG shards:104 - [pianode] took 2ms to load started shards state
+2014-03-26 15:57:30 DEBUG udp:104 - [pianode] using enabled [false], host [null], port [9700-9800], bulk_actions [1000], bulk_size [5mb], flush_interval [5s], concurrent_requests [4]
+2014-03-26 15:57:30 DEBUG decider:104 - [pianode] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+2014-03-26 15:57:30 DEBUG decider:104 - [pianode] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+2014-03-26 15:57:30 DEBUG decider:104 - [pianode] using [cluster_concurrent_rebalance] with [2]
+2014-03-26 15:57:30 DEBUG decider:104 - [pianode] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+2014-03-26 15:57:30 DEBUG decider:104 - [pianode] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+2014-03-26 15:57:30 DEBUG decider:104 - [pianode] using [cluster_concurrent_rebalance] with [2]
+2014-03-26 15:57:30 INFO  node:114 - [pianode] initialized
+2014-03-26 15:57:30 INFO  node:114 - [pianode] starting ...
+2014-03-26 15:57:30 DEBUG SelectorUtil:104 - Using select timeout of 500
+2014-03-26 15:57:30 DEBUG SelectorUtil:104 - Epoll-bug workaround enabled = false
+2014-03-26 15:57:30 DEBUG netty:104 - [pianode] Bound to address [/0:0:0:0:0:0:0:0:9300]
+2014-03-26 15:57:30 INFO  transport:114 - [pianode] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.2.108:9300]}
+2014-03-26 15:57:33 DEBUG zen:104 - [pianode] filtered ping responses: (filter_client[true], filter_data[false]) {none}
+2014-03-26 15:57:33 DEBUG service:104 - [pianode] processing [zen-disco-join (elected_as_master)]: execute
+2014-03-26 15:57:33 DEBUG service:104 - [pianode] cluster state updated, version [1], source [zen-disco-join (elected_as_master)]
+2014-03-26 15:57:33 INFO  service:114 - [pianode] new_master [pianode][ksYN6nCcQxuNwyPBTWQehQ][phannc][inet[/192.168.2.108:9300]], reason: zen-disco-join (elected_as_master)
+2014-03-26 15:57:33 DEBUG netty:104 - [pianode] connected to node [[pianode][ksYN6nCcQxuNwyPBTWQehQ][phannc][inet[/192.168.2.108:9300]]]
+2014-03-26 15:57:33 DEBUG service:104 - [pianode] publishing cluster state version 1
+2014-03-26 15:57:33 DEBUG service:104 - [pianode] set local cluster state to version 1
+2014-03-26 15:57:33 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 15:57:33 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 15:57:33 DEBUG service:104 - [pianode] processing [zen-disco-join (elected_as_master)]: done applying updated cluster_state (version: 1)
+2014-03-26 15:57:33 INFO  discovery:114 - [pianode] piacluster/ksYN6nCcQxuNwyPBTWQehQ
+2014-03-26 15:57:33 DEBUG service:104 - [pianode] processing [local-gateway-elected-state]: execute
+2014-03-26 15:57:33 DEBUG local:104 - [pianode] [piaidx][1]: allocating [[piaidx][1], node[null], [P], s[UNASSIGNED]] to [[pianode][ksYN6nCcQxuNwyPBTWQehQ][phannc][inet[/192.168.2.108:9300]]] on primary allocation
+2014-03-26 15:57:33 DEBUG local:104 - [pianode] [piaidx][4]: allocating [[piaidx][4], node[null], [P], s[UNASSIGNED]] to [[pianode][ksYN6nCcQxuNwyPBTWQehQ][phannc][inet[/192.168.2.108:9300]]] on primary allocation
+2014-03-26 15:57:33 DEBUG local:104 - [pianode] [piaidx][0]: allocating [[piaidx][0], node[null], [P], s[UNASSIGNED]] to [[pianode][ksYN6nCcQxuNwyPBTWQehQ][phannc][inet[/192.168.2.108:9300]]] on primary allocation
+2014-03-26 15:57:33 DEBUG local:104 - [pianode] [piaidx][2]: allocating [[piaidx][2], node[null], [P], s[UNASSIGNED]] to [[pianode][ksYN6nCcQxuNwyPBTWQehQ][phannc][inet[/192.168.2.108:9300]]] on primary allocation
+2014-03-26 15:57:33 DEBUG local:104 - [pianode] [piaidx][3]: throttling allocation [[piaidx][3], node[null], [P], s[UNASSIGNED]] to [[[pianode][ksYN6nCcQxuNwyPBTWQehQ][phannc][inet[/192.168.2.108:9300]]]] on primary allocation
+2014-03-26 15:57:33 DEBUG service:104 - [pianode] cluster state updated, version [2], source [local-gateway-elected-state]
+2014-03-26 15:57:33 DEBUG service:104 - [pianode] publishing cluster state version 2
+2014-03-26 15:57:33 DEBUG service:104 - [pianode] set local cluster state to version 2
+2014-03-26 15:57:33 DEBUG cluster:104 - [pianode] [piaidx] creating index
+2014-03-26 15:57:33 DEBUG indices:104 - [pianode] creating Index [piaidx], shards [5]/[1]
+2014-03-26 15:57:33 INFO  http:114 - [pianode] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.2.108:9200]}
+2014-03-26 15:57:34 DEBUG mapper:104 - [pianode] [piaidx] using dynamic[true], default mapping: default_mapping_location[null], loaded_from[jar:file:/C:/Users/phan/.m2/repository/org/elasticsearch/elasticsearch/1.0.1/elasticsearch-1.0.1.jar!/org/elasticsearch/index/mapper/default-mapping.json], default percolator mapping: location[null], loaded_from[null]
+2014-03-26 15:57:34 DEBUG resident:104 - [pianode] [piaidx] using [resident] query cache with max_size [100], expire [null]
+2014-03-26 15:57:34 DEBUG fs:104 - [pianode] [piaidx] using index.store.throttle.type [node], with index.store.throttle.max_bytes_per_sec [0b]
+2014-03-26 15:57:34 DEBUG cluster:104 - [pianode] [piaidx] adding mapping [link], source [{"link":{"properties":{"categoryid":{"type":"long"},"cloudid":{"type":"long"},"content":{"type":"string"},"createdon":{"type":"string"},"localPagePath":{"type":"string"},"note":{"type":"string"},"originalPagePath":{"type":"string"},"url":{"type":"string"}}}}]
+2014-03-26 15:57:34 DEBUG cluster:104 - [pianode] [piaidx][2] creating shard
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx] creating shard_id [2]
+2014-03-26 15:57:34 DEBUG deletionpolicy:104 - [pianode] [piaidx][2] Using [keep_only_last] deletion policy
+2014-03-26 15:57:34 DEBUG policy:104 - [pianode] [piaidx][2] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2014-03-26 15:57:34 DEBUG scheduler:104 - [pianode] [piaidx][2] using [concurrent] merge scheduler with max_thread_count[3]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][2] state: [CREATED]
+2014-03-26 15:57:34 DEBUG translog:104 - [pianode] [piaidx][2] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][2] state: [CREATED]->[RECOVERING], reason [from gateway]
+2014-03-26 15:57:34 DEBUG cluster:104 - [pianode] [piaidx][0] creating shard
+2014-03-26 15:57:34 DEBUG gateway:104 - [pianode] [piaidx][2] starting recovery from local ...
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx] creating shard_id [0]
+2014-03-26 15:57:34 DEBUG internal:104 - [pianode] [piaidx][2] starting engine
+2014-03-26 15:57:34 DEBUG deletionpolicy:104 - [pianode] [piaidx][0] Using [keep_only_last] deletion policy
+2014-03-26 15:57:34 DEBUG policy:104 - [pianode] [piaidx][0] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2014-03-26 15:57:34 DEBUG scheduler:104 - [pianode] [piaidx][0] using [concurrent] merge scheduler with max_thread_count[3]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][0] state: [CREATED]
+2014-03-26 15:57:34 DEBUG translog:104 - [pianode] [piaidx][0] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][0] state: [CREATED]->[RECOVERING], reason [from gateway]
+2014-03-26 15:57:34 DEBUG cluster:104 - [pianode] [piaidx][1] creating shard
+2014-03-26 15:57:34 DEBUG gateway:104 - [pianode] [piaidx][0] starting recovery from local ...
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx] creating shard_id [1]
+2014-03-26 15:57:34 DEBUG internal:104 - [pianode] [piaidx][0] starting engine
+2014-03-26 15:57:34 DEBUG deletionpolicy:104 - [pianode] [piaidx][1] Using [keep_only_last] deletion policy
+2014-03-26 15:57:34 DEBUG policy:104 - [pianode] [piaidx][1] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2014-03-26 15:57:34 DEBUG scheduler:104 - [pianode] [piaidx][1] using [concurrent] merge scheduler with max_thread_count[3]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][1] state: [CREATED]
+2014-03-26 15:57:34 DEBUG translog:104 - [pianode] [piaidx][1] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][1] state: [CREATED]->[RECOVERING], reason [from gateway]
+2014-03-26 15:57:34 DEBUG cluster:104 - [pianode] [piaidx][4] creating shard
+2014-03-26 15:57:34 DEBUG gateway:104 - [pianode] [piaidx][1] starting recovery from local ...
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx] creating shard_id [4]
+2014-03-26 15:57:34 DEBUG internal:104 - [pianode] [piaidx][1] starting engine
+2014-03-26 15:57:34 DEBUG deletionpolicy:104 - [pianode] [piaidx][4] Using [keep_only_last] deletion policy
+2014-03-26 15:57:34 DEBUG policy:104 - [pianode] [piaidx][4] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2014-03-26 15:57:34 DEBUG scheduler:104 - [pianode] [piaidx][4] using [concurrent] merge scheduler with max_thread_count[3]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][4] state: [CREATED]
+2014-03-26 15:57:34 DEBUG translog:104 - [pianode] [piaidx][4] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][4] state: [CREATED]->[RECOVERING], reason [from gateway]
+2014-03-26 15:57:34 DEBUG gateway:104 - [pianode] [piaidx][4] starting recovery from local ...
+2014-03-26 15:57:34 DEBUG internal:104 - [pianode] [piaidx][4] starting engine
+2014-03-26 15:57:34 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 15:57:34 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][0] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][2] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][0] scheduling refresher every 1s
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][2] scheduling refresher every 1s
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][0] scheduling optimizer / merger every 1s
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][2] scheduling optimizer / merger every 1s
+2014-03-26 15:57:34 DEBUG gateway:104 - [pianode] [piaidx][0] recovery completed from [local], took [36ms]
+2014-03-26 15:57:34 DEBUG gateway:104 - [pianode] [piaidx][2] recovery completed from [local], took [47ms]
+2014-03-26 15:57:34 DEBUG shard:104 - [pianode] sending shard started for [piaidx][0], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:57:34 DEBUG shard:104 - [pianode] sending shard started for [piaidx][2], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:57:34 DEBUG shard:104 - [pianode] received shard started for [piaidx][0], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:57:34 DEBUG shard:104 - [pianode] received shard started for [piaidx][2], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:57:34 INFO  gateway:114 - [pianode] recovered [1] indices into cluster_state
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] processing [local-gateway-elected-state]: done applying updated cluster_state (version: 2)
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][2], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2014-03-26 15:57:34 DEBUG shard:104 - [pianode] [piaidx][0] will apply shard started [piaidx][0], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:57:34 DEBUG shard:104 - [pianode] [piaidx][2] will apply shard started [piaidx][2], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:57:34 DEBUG local:104 - [pianode] [piaidx][3]: allocating [[piaidx][3], node[null], [P], s[UNASSIGNED]] to [[pianode][ksYN6nCcQxuNwyPBTWQehQ][phannc][inet[/192.168.2.108:9300]]] on primary allocation
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] cluster state updated, version [3], source [shard-started ([piaidx][2], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] publishing cluster state version 3
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] set local cluster state to version 3
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][0] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+2014-03-26 15:57:34 DEBUG cluster:104 - [pianode] [piaidx][3] creating shard
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx] creating shard_id [3]
+2014-03-26 15:57:34 DEBUG deletionpolicy:104 - [pianode] [piaidx][3] Using [keep_only_last] deletion policy
+2014-03-26 15:57:34 DEBUG policy:104 - [pianode] [piaidx][3] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2014-03-26 15:57:34 DEBUG scheduler:104 - [pianode] [piaidx][3] using [concurrent] merge scheduler with max_thread_count[3]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][3] state: [CREATED]
+2014-03-26 15:57:34 DEBUG translog:104 - [pianode] [piaidx][3] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][3] state: [CREATED]->[RECOVERING], reason [from gateway]
+2014-03-26 15:57:34 DEBUG gateway:104 - [pianode] [piaidx][3] starting recovery from local ...
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][2] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+2014-03-26 15:57:34 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 15:57:34 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 15:57:34 DEBUG internal:104 - [pianode] [piaidx][3] starting engine
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][3] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][3] scheduling refresher every 1s
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][3] scheduling optimizer / merger every 1s
+2014-03-26 15:57:34 DEBUG gateway:104 - [pianode] [piaidx][3] recovery completed from [local], took [8ms]
+2014-03-26 15:57:34 DEBUG shard:104 - [pianode] sending shard started for [piaidx][3], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:57:34 DEBUG shard:104 - [pianode] received shard started for [piaidx][3], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][2], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: done applying updated cluster_state (version: 3)
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][0], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][0], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][3], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2014-03-26 15:57:34 DEBUG shard:104 - [pianode] [piaidx][3] will apply shard started [piaidx][3], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] cluster state updated, version [4], source [shard-started ([piaidx][3], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] publishing cluster state version 4
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] set local cluster state to version 4
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][3] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+2014-03-26 15:57:34 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 15:57:34 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][3], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: done applying updated cluster_state (version: 4)
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] processing [updating local node id]: execute
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] cluster state updated, version [5], source [updating local node id]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] publishing cluster state version 5
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] set local cluster state to version 5
+2014-03-26 15:57:34 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 15:57:34 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] processing [updating local node id]: done applying updated cluster_state (version: 5)
+2014-03-26 15:57:34 INFO  node:114 - [pianode] started
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][1] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][4] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][1] scheduling refresher every 1s
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][4] scheduling refresher every 1s
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][1] scheduling optimizer / merger every 1s
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][4] scheduling optimizer / merger every 1s
+2014-03-26 15:57:34 DEBUG gateway:104 - [pianode] [piaidx][1] recovery completed from [local], took [400ms]
+2014-03-26 15:57:34 DEBUG gateway:104 - [pianode] [piaidx][4] recovery completed from [local], took [385ms]
+2014-03-26 15:57:34 DEBUG shard:104 - [pianode] sending shard started for [piaidx][1], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:57:34 DEBUG shard:104 - [pianode] sending shard started for [piaidx][4], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:57:34 DEBUG shard:104 - [pianode] received shard started for [piaidx][1], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:57:34 DEBUG shard:104 - [pianode] received shard started for [piaidx][4], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][1], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2014-03-26 15:57:34 DEBUG shard:104 - [pianode] [piaidx][1] will apply shard started [piaidx][1], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:57:34 DEBUG shard:104 - [pianode] [piaidx][4] will apply shard started [piaidx][4], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] cluster state updated, version [6], source [shard-started ([piaidx][1], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] publishing cluster state version 6
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] set local cluster state to version 6
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][4] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] [piaidx][1] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+2014-03-26 15:57:34 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 15:57:34 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][1], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: done applying updated cluster_state (version: 6)
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][4], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2014-03-26 15:57:34 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][4], node[ksYN6nCcQxuNwyPBTWQehQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+2014-03-26 15:57:43 DEBUG service:104 - [pianode] processing [routing-table-updater]: execute
+2014-03-26 15:57:43 DEBUG service:104 - [pianode] processing [routing-table-updater]: no change in cluster_state
+2014-03-26 15:58:00 DEBUG memory:104 - [pianode] recalculating shard indexing buffer (reason=active/inactive[false] created/deleted[true]), total is [179.3mb] with [5] active shards, each shard set to indexing=[35.8mb], translog=[64kb]
+2014-03-26 15:58:00 DEBUG internal:104 - [pianode] [piaidx][0] updating index_buffer_size from [64mb] to [35.8mb]
+2014-03-26 15:58:00 DEBUG internal:104 - [pianode] [piaidx][1] updating index_buffer_size from [64mb] to [35.8mb]
+2014-03-26 15:58:00 DEBUG internal:104 - [pianode] [piaidx][2] updating index_buffer_size from [64mb] to [35.8mb]
+2014-03-26 15:58:00 DEBUG internal:104 - [pianode] [piaidx][3] updating index_buffer_size from [64mb] to [35.8mb]
+2014-03-26 15:58:00 DEBUG internal:104 - [pianode] [piaidx][4] updating index_buffer_size from [64mb] to [35.8mb]
+2014-03-26 16:20:14 INFO  AsyncArchiveServlet:36 - New archive request comes
+2014-03-26 16:20:14 INFO  AsyncArchiveServlet:44 - Data request:{"resultnewlist":[{"categoryid":8,"cloudid":25,"createdon":"02/03/2014 16:19:00 +0700","note":"diem cao","url":"http://dantri.com.vn/nhip-song-tre/lo-diem-thi-ngat-nguong-huyen-chip-gay-bat-ngo-dan-mang-841320.htm"},{"categoryid":8,"cloudid":33,"createdon":"21/03/2014 12:00:00 +0700","note":"arraylist tutorial","url":"http://www.dotnetperls.com/arraylist"}],"resultupdatelist":[]}
+2014-03-26 16:20:14 INFO  AsyncDownloadWebpageProcessor:33 - Async Processor Start for link: http://dantri.com.vn/nhip-song-tre/lo-diem-thi-ngat-nguong-huyen-chip-gay-bat-ngo-dan-mang-841320.htm
+2014-03-26 16:20:14 INFO  AsyncDownloadWebpageProcessor:33 - Async Processor Start for link: http://www.dotnetperls.com/arraylist
+2014-03-26 16:20:14 INFO  AsyncDownloadWebpageProcessor:58 - Start download file into folder:87393c4e-c058-486f-b2bd-ddce4ad21781 For url http://dantri.com.vn/nhip-song-tre/lo-diem-thi-ngat-nguong-huyen-chip-gay-bat-ngo-dan-mang-841320.htm
+2014-03-26 16:20:14 INFO  AsyncDownloadWebpageProcessor:58 - Start download file into folder:a6d61cf2-49de-4009-bd6e-3c195cbf16ba For url http://www.dotnetperls.com/arraylist
+2014-03-26 16:20:14 ERROR Crawler:263 - C:/Users/phan/AppData/Roaming/piarchiver/a6d61cf2-49de-4009-bd6e-3c195cbf16ba\Resources\arraylist.jpg : no protocol: arraylist.jpg null [Ljava.lang.StackTraceElement;@73c29b33
+2014-03-26 16:20:14 ERROR Crawler:263 - C:/Users/phan/AppData/Roaming/piarchiver/a6d61cf2-49de-4009-bd6e-3c195cbf16ba\Resources\method.png : no protocol: method.png null [Ljava.lang.StackTraceElement;@6d5b6ca4
+2014-03-26 16:20:14 ERROR Crawler:263 - C:/Users/phan/AppData/Roaming/piarchiver/a6d61cf2-49de-4009-bd6e-3c195cbf16ba\Resources\return.png : no protocol: return.png null [Ljava.lang.StackTraceElement;@d39bb13
+2014-03-26 16:20:14 ERROR Crawler:263 - C:/Users/phan/AppData/Roaming/piarchiver/a6d61cf2-49de-4009-bd6e-3c195cbf16ba\Resources\property.png : no protocol: property.png null [Ljava.lang.StackTraceElement;@4928e32d
+2014-03-26 16:20:14 ERROR Crawler:263 - C:/Users/phan/AppData/Roaming/piarchiver/a6d61cf2-49de-4009-bd6e-3c195cbf16ba\Resources\int.png : no protocol: int.png null [Ljava.lang.StackTraceElement;@1b5ac4e1
+2014-03-26 16:20:14 ERROR Crawler:263 - C:/Users/phan/AppData/Roaming/piarchiver/a6d61cf2-49de-4009-bd6e-3c195cbf16ba\Resources\sort.png : no protocol: sort.png null [Ljava.lang.StackTraceElement;@64339dce
+2014-03-26 16:20:14 ERROR Crawler:263 - C:/Users/phan/AppData/Roaming/piarchiver/a6d61cf2-49de-4009-bd6e-3c195cbf16ba\Resources\program.png : no protocol: program.png null [Ljava.lang.StackTraceElement;@78bd72c6
+2014-03-26 16:20:14 ERROR Crawler:263 - C:/Users/phan/AppData/Roaming/piarchiver/a6d61cf2-49de-4009-bd6e-3c195cbf16ba\Resources\net.jpg : no protocol: net.jpg null [Ljava.lang.StackTraceElement;@5dba6317
+2014-03-26 16:20:14 ERROR Crawler:263 - C:/Users/phan/AppData/Roaming/piarchiver/a6d61cf2-49de-4009-bd6e-3c195cbf16ba\Resources\for.png : no protocol: for.png null [Ljava.lang.StackTraceElement;@77bfab13
+2014-03-26 16:20:14 ERROR Crawler:263 - C:/Users/phan/AppData/Roaming/piarchiver/a6d61cf2-49de-4009-bd6e-3c195cbf16ba\Resources\as.png : no protocol: as.png null [Ljava.lang.StackTraceElement;@4878a9d0
+2014-03-26 16:20:14 ERROR Crawler:263 - C:/Users/phan/AppData/Roaming/piarchiver/a6d61cf2-49de-4009-bd6e-3c195cbf16ba\Resources\method-4.png : no protocol: method-4.png null [Ljava.lang.StackTraceElement;@69d4bbdb
+2014-03-26 16:20:14 ERROR Crawler:263 - C:/Users/phan/AppData/Roaming/piarchiver/a6d61cf2-49de-4009-bd6e-3c195cbf16ba\Resources\tip.png : no protocol: tip.png null [Ljava.lang.StackTraceElement;@d795d25
+2014-03-26 16:20:14 ERROR Crawler:263 - C:/Users/phan/AppData/Roaming/piarchiver/a6d61cf2-49de-4009-bd6e-3c195cbf16ba\Resources\convert.png : no protocol: convert.png null [Ljava.lang.StackTraceElement;@1ad22f0c
+2014-03-26 16:20:14 ERROR Crawler:263 - C:/Users/phan/AppData/Roaming/piarchiver/a6d61cf2-49de-4009-bd6e-3c195cbf16ba\Resources\question.png : no protocol: question.png null [Ljava.lang.StackTraceElement;@5d0eca95
+2014-03-26 16:20:14 ERROR Crawler:263 - C:/Users/phan/AppData/Roaming/piarchiver/a6d61cf2-49de-4009-bd6e-3c195cbf16ba\Resources\abc.png : no protocol: abc.png null [Ljava.lang.StackTraceElement;@76162bed
+2014-03-26 16:20:14 ERROR Crawler:263 - C:/Users/phan/AppData/Roaming/piarchiver/a6d61cf2-49de-4009-bd6e-3c195cbf16ba\Resources\c-2.png : no protocol: c-2.png null [Ljava.lang.StackTraceElement;@299e112c
+2014-03-26 16:20:15 INFO  AsyncDownloadWebpageProcessor:61 - End download file into folder:a6d61cf2-49de-4009-bd6e-3c195cbf16ba For url http://www.dotnetperls.com/arraylist
+2014-03-26 16:20:15 INFO  AsyncDownloadWebpageProcessor:75 - Start index link document For url: http://www.dotnetperls.com/arraylist
+2014-03-26 16:20:15 INFO  AsyncDownloadWebpageProcessor:77 - End index link document For url: http://www.dotnetperls.com/arraylist
+2014-03-26 16:20:15 INFO  AsyncDownloadWebpageProcessor:52 - Async Processor End for link: http://www.dotnetperls.com/arraylist
+2014-03-26 16:20:19 INFO  AsyncDownloadWebpageProcessor:61 - End download file into folder:87393c4e-c058-486f-b2bd-ddce4ad21781 For url http://dantri.com.vn/nhip-song-tre/lo-diem-thi-ngat-nguong-huyen-chip-gay-bat-ngo-dan-mang-841320.htm
+2014-03-26 16:20:19 INFO  AsyncDownloadWebpageProcessor:75 - Start index link document For url: http://dantri.com.vn/nhip-song-tre/lo-diem-thi-ngat-nguong-huyen-chip-gay-bat-ngo-dan-mang-841320.htm
+2014-03-26 16:20:19 INFO  AsyncDownloadWebpageProcessor:77 - End index link document For url: http://dantri.com.vn/nhip-song-tre/lo-diem-thi-ngat-nguong-huyen-chip-gay-bat-ngo-dan-mang-841320.htm
+2014-03-26 16:20:19 INFO  AsyncDownloadWebpageProcessor:52 - Async Processor End for link: http://dantri.com.vn/nhip-song-tre/lo-diem-thi-ngat-nguong-huyen-chip-gay-bat-ngo-dan-mang-841320.htm
+2014-03-26 16:28:30 DEBUG memory:104 - [pianode] marking shard [piaidx][0] as inactive (inactive_time[30m]) indexing wise, setting size to [500kb]
+2014-03-26 16:28:30 DEBUG memory:104 - [pianode] marking shard [piaidx][2] as inactive (inactive_time[30m]) indexing wise, setting size to [500kb]
+2014-03-26 16:28:30 DEBUG memory:104 - [pianode] marking shard [piaidx][3] as inactive (inactive_time[30m]) indexing wise, setting size to [500kb]
+2014-03-26 16:28:30 DEBUG internal:104 - [pianode] [piaidx][0] updating index_buffer_size from [35.8mb] to (inactive) [500kb]
+2014-03-26 16:28:30 DEBUG internal:104 - [pianode] [piaidx][2] updating index_buffer_size from [35.8mb] to (inactive) [500kb]
+2014-03-26 16:28:30 DEBUG internal:104 - [pianode] [piaidx][3] updating index_buffer_size from [35.8mb] to (inactive) [500kb]
+2014-03-26 16:28:30 DEBUG memory:104 - [pianode] recalculating shard indexing buffer (reason=active/inactive[true] created/deleted[false]), total is [179.3mb] with [2] active shards, each shard set to indexing=[89.6mb], translog=[64kb]
+2014-03-26 16:28:30 DEBUG internal:104 - [pianode] [piaidx][1] updating index_buffer_size from [35.8mb] to [89.6mb]
+2014-03-26 16:28:30 DEBUG internal:104 - [pianode] [piaidx][4] updating index_buffer_size from [35.8mb] to [89.6mb]
+2014-03-26 16:49:10 INFO  PiConfig:33 - Read OK config file:piconfig.properties
+2014-03-26 16:49:10 INFO  node:114 - [pianode] version[1.0.1], pid[5496], build[5c03844/2014-02-25T15:52:53Z]
+2014-03-26 16:49:10 INFO  node:114 - [pianode] initializing ...
+2014-03-26 16:49:10 DEBUG node:104 - [pianode] using home [E:\my workspace\java workspace\PiArchiverLocal], config [E:\my workspace\java workspace\PiArchiverLocal\config], data [[C:\Users\phan\AppData\Roaming\piarchiver\data]], logs [E:\my workspace\java workspace\PiArchiverLocal\logs], work [E:\my workspace\java workspace\PiArchiverLocal\work], plugins [E:\my workspace\java workspace\PiArchiverLocal\plugins]
+2014-03-26 16:49:10 INFO  plugins:114 - [pianode] loaded [], sites []
+2014-03-26 16:49:10 DEBUG lzf:104 - using [UnsafeChunkDecoder] decoder
+2014-03-26 16:49:10 DEBUG env:104 - [pianode] using node location [[C:\Users\phan\AppData\Roaming\piarchiver\data\piacluster\nodes\0]], local_node_id [0]
+2014-03-26 16:49:11 DEBUG threadpool:104 - [pianode] creating thread_pool [generic], type [cached], keep_alive [30s]
+2014-03-26 16:49:11 DEBUG threadpool:104 - [pianode] creating thread_pool [index], type [fixed], size [8], queue_size [200]
+2014-03-26 16:49:11 DEBUG threadpool:104 - [pianode] creating thread_pool [bulk], type [fixed], size [8], queue_size [50]
+2014-03-26 16:49:11 DEBUG threadpool:104 - [pianode] creating thread_pool [get], type [fixed], size [8], queue_size [1k]
+2014-03-26 16:49:11 DEBUG threadpool:104 - [pianode] creating thread_pool [search], type [fixed], size [24], queue_size [1k]
+2014-03-26 16:49:11 DEBUG threadpool:104 - [pianode] creating thread_pool [suggest], type [fixed], size [8], queue_size [1k]
+2014-03-26 16:49:11 DEBUG threadpool:104 - [pianode] creating thread_pool [percolate], type [fixed], size [8], queue_size [1k]
+2014-03-26 16:49:11 DEBUG threadpool:104 - [pianode] creating thread_pool [management], type [scaling], min [1], size [5], keep_alive [5m]
+2014-03-26 16:49:11 DEBUG threadpool:104 - [pianode] creating thread_pool [flush], type [scaling], min [1], size [4], keep_alive [5m]
+2014-03-26 16:49:11 DEBUG threadpool:104 - [pianode] creating thread_pool [merge], type [scaling], min [1], size [4], keep_alive [5m]
+2014-03-26 16:49:11 DEBUG threadpool:104 - [pianode] creating thread_pool [refresh], type [scaling], min [1], size [4], keep_alive [5m]
+2014-03-26 16:49:11 DEBUG threadpool:104 - [pianode] creating thread_pool [warmer], type [scaling], min [1], size [4], keep_alive [5m]
+2014-03-26 16:49:11 DEBUG threadpool:104 - [pianode] creating thread_pool [snapshot], type [scaling], min [1], size [4], keep_alive [5m]
+2014-03-26 16:49:11 DEBUG threadpool:104 - [pianode] creating thread_pool [optimize], type [fixed], size [1], queue_size [null]
+2014-03-26 16:49:11 DEBUG netty:104 - [pianode] using worker_count[16], port[9300-9400], bind_host[null], publish_host[null], compress[false], connect_timeout[30s], connections_per_node[2/3/6/1/1], receive_predictor[512kb->512kb]
+2014-03-26 16:49:11 DEBUG multicast:104 - [pianode] using group [224.2.2.4], with port [54328], ttl [3], and address [null]
+2014-03-26 16:49:11 DEBUG unicast:104 - [pianode] using initial hosts [], with concurrent_connects [10]
+2014-03-26 16:49:11 DEBUG zen:104 - [pianode] using ping.timeout [3s], master_election.filter_client [true], master_election.filter_data [false]
+2014-03-26 16:49:11 DEBUG elect:104 - [pianode] using minimum_master_nodes [-1]
+2014-03-26 16:49:11 DEBUG fd:104 - [pianode] [master] uses ping_interval [1s], ping_timeout [30s], ping_retries [3]
+2014-03-26 16:49:11 DEBUG fd:104 - [pianode] [node  ] uses ping_interval [1s], ping_timeout [30s], ping_retries [3]
+2014-03-26 16:49:11 DEBUG jvm:104 - [pianode] enabled [true], last_gc_enabled [false], interval [1s], gc_threshold [{old=GcThreshold{name='old', warnThreshold=10000, infoThreshold=5000, debugThreshold=2000}, default=GcThreshold{name='default', warnThreshold=10000, infoThreshold=5000, debugThreshold=2000}, young=GcThreshold{name='young', warnThreshold=1000, infoThreshold=700, debugThreshold=400}}]
+2014-03-26 16:49:11 DEBUG os:104 - [pianode] Using probe [org.elasticsearch.monitor.os.JmxOsProbe@35c2f682] with refresh_interval [1s]
+2014-03-26 16:49:11 DEBUG process:104 - [pianode] Using probe [org.elasticsearch.monitor.process.JmxProcessProbe@42b4ed5a] with refresh_interval [1s]
+2014-03-26 16:49:11 DEBUG jvm:104 - [pianode] Using refresh_interval [1s]
+2014-03-26 16:49:11 DEBUG network:104 - [pianode] Using probe [org.elasticsearch.monitor.network.JmxNetworkProbe@7b00eb01] with refresh_interval [5s]
+2014-03-26 16:49:11 DEBUG network:104 - [pianode] net_info
+host [phannc]
+lo	display_name [Software Loopback Interface 1]
+		address [/127.0.0.1] [/0:0:0:0:0:0:0:1] 
+		mtu [-1] multicast [true] ptp [false] loopback [true] up [true] virtual [false]
+eth0	display_name [Microsoft Kernel Debug Network Adapter]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth1	display_name [Realtek PCIe GBE Family Controller]
+		address [/192.168.2.108] [/fe80:0:0:0:a92b:3db8:4dc1:5a23%3] 
+		mtu [1500] multicast [true] ptp [false] loopback [false] up [true] virtual [false]
+net0	display_name [Microsoft ISATAP Adapter]
+		address [/fe80:0:0:0:0:5efe:c0a8:26c%4] 
+		mtu [1280] multicast [false] ptp [true] loopback [false] up [false] virtual [false]
+net1	display_name [Teredo Tunneling Pseudo-Interface]
+		address [/fe80:0:0:0:20d8:9b90:c545:253b%5] 
+		mtu [1280] multicast [false] ptp [true] loopback [false] up [true] virtual [false]
+net2	display_name [Microsoft ISATAP Adapter #2]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net3	display_name [WAN Miniport (SSTP)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth2	display_name [WAN Miniport (IP)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+ppp0	display_name [WAN Miniport (PPPOE)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net4	display_name [WAN Miniport (PPTP)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net5	display_name [WAN Miniport (L2TP)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net6	display_name [WAN Miniport (IKEv2)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth3	display_name [WAN Miniport (Network Monitor)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth4	display_name [WAN Miniport (IPv6)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+ppp1	display_name [RAS Async Adapter]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth5	display_name [Microsoft Hyper-V Network Switch Default Miniport]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth6	display_name [Realtek PCIe GBE Family Controller-WFP Native MAC Layer LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth7	display_name [Realtek PCIe GBE Family Controller-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth8	display_name [Realtek PCIe GBE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth9	display_name [WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth10	display_name [WAN Miniport (IP)-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth11	display_name [WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth12	display_name [WAN Miniport (IPv6)-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth13	display_name [WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth14	display_name [WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+
+2014-03-26 16:49:11 DEBUG fs:104 - [pianode] Using probe [org.elasticsearch.monitor.fs.JmxFsProbe@35de0174] with refresh_interval [1s]
+2014-03-26 16:49:11 DEBUG store:104 - [pianode] using indices.store.throttle.type [MERGE], with index.store.throttle.max_bytes_per_sec [20mb]
+2014-03-26 16:49:11 DEBUG memory:104 - [pianode] using bytebuffer cache with small_buffer_size [1kb], large_buffer_size [1mb], small_cache_size [10mb], large_cache_size [500mb], direct [true]
+2014-03-26 16:49:11 DEBUG script:104 - [pianode] using script cache with max_size [500], expire [null]
+2014-03-26 16:49:11 DEBUG decider:104 - [pianode] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+2014-03-26 16:49:11 DEBUG decider:104 - [pianode] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+2014-03-26 16:49:11 DEBUG decider:104 - [pianode] using [cluster_concurrent_rebalance] with [2]
+2014-03-26 16:49:11 DEBUG local:104 - [pianode] using initial_shards [quorum], list_timeout [30s]
+2014-03-26 16:49:11 DEBUG recovery:104 - [pianode] using max_bytes_per_sec[20mb], concurrent_streams [3], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+2014-03-26 16:49:11 DEBUG netty:104 - [pianode] using max_chunk_size[8kb], max_header_size[8kb], max_initial_line_length[4kb], max_content_length[100mb], receive_predictor[512kb->512kb]
+2014-03-26 16:49:11 DEBUG memory:104 - [pianode] using index_buffer_size [179.3mb], with min_shard_index_buffer_size [4mb], max_shard_index_buffer_size [512mb], shard_inactive_time [30m]
+2014-03-26 16:49:11 DEBUG filter:104 - [pianode] using [node] weighted filter cache with size [20%], actual_size [358.7mb], expire [null], clean_interval [1m]
+2014-03-26 16:49:11 DEBUG cache:104 - [pianode] using size [-1] [-1b], expire [null]
+2014-03-26 16:49:11 DEBUG meta:104 - [pianode] using gateway.local.auto_import_dangled [YES], with gateway.local.dangling_timeout [2h]
+2014-03-26 16:49:11 DEBUG meta:104 - [pianode] took 18ms to load state
+2014-03-26 16:49:11 DEBUG shards:104 - [pianode] took 2ms to load started shards state
+2014-03-26 16:49:11 DEBUG udp:104 - [pianode] using enabled [false], host [null], port [9700-9800], bulk_actions [1000], bulk_size [5mb], flush_interval [5s], concurrent_requests [4]
+2014-03-26 16:49:11 DEBUG decider:104 - [pianode] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+2014-03-26 16:49:11 DEBUG decider:104 - [pianode] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+2014-03-26 16:49:11 DEBUG decider:104 - [pianode] using [cluster_concurrent_rebalance] with [2]
+2014-03-26 16:49:11 DEBUG decider:104 - [pianode] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+2014-03-26 16:49:11 DEBUG decider:104 - [pianode] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+2014-03-26 16:49:11 DEBUG decider:104 - [pianode] using [cluster_concurrent_rebalance] with [2]
+2014-03-26 16:49:11 INFO  node:114 - [pianode] initialized
+2014-03-26 16:49:11 INFO  node:114 - [pianode] starting ...
+2014-03-26 16:49:11 DEBUG SelectorUtil:104 - Using select timeout of 500
+2014-03-26 16:49:11 DEBUG SelectorUtil:104 - Epoll-bug workaround enabled = false
+2014-03-26 16:49:12 DEBUG netty:104 - [pianode] Bound to address [/0:0:0:0:0:0:0:0:9300]
+2014-03-26 16:49:12 INFO  transport:114 - [pianode] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.2.108:9300]}
+2014-03-26 16:49:15 DEBUG zen:104 - [pianode] filtered ping responses: (filter_client[true], filter_data[false]) {none}
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] processing [zen-disco-join (elected_as_master)]: execute
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] cluster state updated, version [1], source [zen-disco-join (elected_as_master)]
+2014-03-26 16:49:15 INFO  service:114 - [pianode] new_master [pianode][ljEf0a30QNiR0sUWVmAU6A][phannc][inet[/192.168.2.108:9300]], reason: zen-disco-join (elected_as_master)
+2014-03-26 16:49:15 DEBUG netty:104 - [pianode] connected to node [[pianode][ljEf0a30QNiR0sUWVmAU6A][phannc][inet[/192.168.2.108:9300]]]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] publishing cluster state version 1
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] set local cluster state to version 1
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] processing [zen-disco-join (elected_as_master)]: done applying updated cluster_state (version: 1)
+2014-03-26 16:49:15 INFO  discovery:114 - [pianode] piacluster/ljEf0a30QNiR0sUWVmAU6A
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] processing [local-gateway-elected-state]: execute
+2014-03-26 16:49:15 DEBUG local:104 - [pianode] [piaidx][4]: allocating [[piaidx][4], node[null], [P], s[UNASSIGNED]] to [[pianode][ljEf0a30QNiR0sUWVmAU6A][phannc][inet[/192.168.2.108:9300]]] on primary allocation
+2014-03-26 16:49:15 DEBUG local:104 - [pianode] [piaidx][0]: allocating [[piaidx][0], node[null], [P], s[UNASSIGNED]] to [[pianode][ljEf0a30QNiR0sUWVmAU6A][phannc][inet[/192.168.2.108:9300]]] on primary allocation
+2014-03-26 16:49:15 DEBUG local:104 - [pianode] [piaidx][3]: allocating [[piaidx][3], node[null], [P], s[UNASSIGNED]] to [[pianode][ljEf0a30QNiR0sUWVmAU6A][phannc][inet[/192.168.2.108:9300]]] on primary allocation
+2014-03-26 16:49:15 DEBUG local:104 - [pianode] [piaidx][2]: allocating [[piaidx][2], node[null], [P], s[UNASSIGNED]] to [[pianode][ljEf0a30QNiR0sUWVmAU6A][phannc][inet[/192.168.2.108:9300]]] on primary allocation
+2014-03-26 16:49:15 DEBUG local:104 - [pianode] [piaidx][1]: throttling allocation [[piaidx][1], node[null], [P], s[UNASSIGNED]] to [[[pianode][ljEf0a30QNiR0sUWVmAU6A][phannc][inet[/192.168.2.108:9300]]]] on primary allocation
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] cluster state updated, version [2], source [local-gateway-elected-state]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] publishing cluster state version 2
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] set local cluster state to version 2
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] [piaidx] creating index
+2014-03-26 16:49:15 DEBUG indices:104 - [pianode] creating Index [piaidx], shards [5]/[1]
+2014-03-26 16:49:15 INFO  http:114 - [pianode] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.2.108:9200]}
+2014-03-26 16:49:15 DEBUG mapper:104 - [pianode] [piaidx] using dynamic[true], default mapping: default_mapping_location[null], loaded_from[jar:file:/C:/Users/phan/.m2/repository/org/elasticsearch/elasticsearch/1.0.1/elasticsearch-1.0.1.jar!/org/elasticsearch/index/mapper/default-mapping.json], default percolator mapping: location[null], loaded_from[null]
+2014-03-26 16:49:15 DEBUG resident:104 - [pianode] [piaidx] using [resident] query cache with max_size [100], expire [null]
+2014-03-26 16:49:15 DEBUG fs:104 - [pianode] [piaidx] using index.store.throttle.type [node], with index.store.throttle.max_bytes_per_sec [0b]
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] [piaidx] adding mapping [link], source [{"link":{"properties":{"categoryid":{"type":"long"},"cloudid":{"type":"long"},"content":{"type":"string"},"createdon":{"type":"string"},"localPagePath":{"type":"string"},"note":{"type":"string"},"originalPagePath":{"type":"string"},"url":{"type":"string"}}}}]
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] [piaidx][2] creating shard
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx] creating shard_id [2]
+2014-03-26 16:49:15 DEBUG deletionpolicy:104 - [pianode] [piaidx][2] Using [keep_only_last] deletion policy
+2014-03-26 16:49:15 DEBUG policy:104 - [pianode] [piaidx][2] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2014-03-26 16:49:15 DEBUG scheduler:104 - [pianode] [piaidx][2] using [concurrent] merge scheduler with max_thread_count[3]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][2] state: [CREATED]
+2014-03-26 16:49:15 DEBUG translog:104 - [pianode] [piaidx][2] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][2] state: [CREATED]->[RECOVERING], reason [from gateway]
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] [piaidx][0] creating shard
+2014-03-26 16:49:15 DEBUG gateway:104 - [pianode] [piaidx][2] starting recovery from local ...
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx] creating shard_id [0]
+2014-03-26 16:49:15 DEBUG internal:104 - [pianode] [piaidx][2] starting engine
+2014-03-26 16:49:15 DEBUG deletionpolicy:104 - [pianode] [piaidx][0] Using [keep_only_last] deletion policy
+2014-03-26 16:49:15 DEBUG policy:104 - [pianode] [piaidx][0] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2014-03-26 16:49:15 DEBUG scheduler:104 - [pianode] [piaidx][0] using [concurrent] merge scheduler with max_thread_count[3]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][0] state: [CREATED]
+2014-03-26 16:49:15 DEBUG translog:104 - [pianode] [piaidx][0] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][0] state: [CREATED]->[RECOVERING], reason [from gateway]
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] [piaidx][3] creating shard
+2014-03-26 16:49:15 DEBUG gateway:104 - [pianode] [piaidx][0] starting recovery from local ...
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx] creating shard_id [3]
+2014-03-26 16:49:15 DEBUG internal:104 - [pianode] [piaidx][0] starting engine
+2014-03-26 16:49:15 DEBUG deletionpolicy:104 - [pianode] [piaidx][3] Using [keep_only_last] deletion policy
+2014-03-26 16:49:15 DEBUG policy:104 - [pianode] [piaidx][3] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2014-03-26 16:49:15 DEBUG scheduler:104 - [pianode] [piaidx][3] using [concurrent] merge scheduler with max_thread_count[3]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][3] state: [CREATED]
+2014-03-26 16:49:15 DEBUG translog:104 - [pianode] [piaidx][3] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][3] state: [CREATED]->[RECOVERING], reason [from gateway]
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] [piaidx][4] creating shard
+2014-03-26 16:49:15 DEBUG gateway:104 - [pianode] [piaidx][3] starting recovery from local ...
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx] creating shard_id [4]
+2014-03-26 16:49:15 DEBUG internal:104 - [pianode] [piaidx][3] starting engine
+2014-03-26 16:49:15 DEBUG deletionpolicy:104 - [pianode] [piaidx][4] Using [keep_only_last] deletion policy
+2014-03-26 16:49:15 DEBUG policy:104 - [pianode] [piaidx][4] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2014-03-26 16:49:15 DEBUG scheduler:104 - [pianode] [piaidx][4] using [concurrent] merge scheduler with max_thread_count[3]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][4] state: [CREATED]
+2014-03-26 16:49:15 DEBUG translog:104 - [pianode] [piaidx][4] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][4] state: [CREATED]->[RECOVERING], reason [from gateway]
+2014-03-26 16:49:15 DEBUG gateway:104 - [pianode] [piaidx][4] starting recovery from local ...
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 16:49:15 DEBUG internal:104 - [pianode] [piaidx][4] starting engine
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][0] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][3] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][2] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][2] scheduling refresher every 1s
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][3] scheduling refresher every 1s
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][0] scheduling refresher every 1s
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][2] scheduling optimizer / merger every 1s
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][0] scheduling optimizer / merger every 1s
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][3] scheduling optimizer / merger every 1s
+2014-03-26 16:49:15 DEBUG gateway:104 - [pianode] [piaidx][2] recovery completed from [local], took [45ms]
+2014-03-26 16:49:15 DEBUG gateway:104 - [pianode] [piaidx][3] recovery completed from [local], took [23ms]
+2014-03-26 16:49:15 DEBUG gateway:104 - [pianode] [piaidx][0] recovery completed from [local], took [35ms]
+2014-03-26 16:49:15 DEBUG shard:104 - [pianode] sending shard started for [piaidx][0], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 16:49:15 DEBUG shard:104 - [pianode] sending shard started for [piaidx][2], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 16:49:15 DEBUG shard:104 - [pianode] sending shard started for [piaidx][3], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 16:49:15 DEBUG shard:104 - [pianode] received shard started for [piaidx][2], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 16:49:15 DEBUG shard:104 - [pianode] received shard started for [piaidx][0], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 16:49:15 DEBUG shard:104 - [pianode] received shard started for [piaidx][3], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 16:49:15 INFO  gateway:114 - [pianode] recovered [1] indices into cluster_state
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] processing [local-gateway-elected-state]: done applying updated cluster_state (version: 2)
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][2], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2014-03-26 16:49:15 DEBUG shard:104 - [pianode] [piaidx][2] will apply shard started [piaidx][2], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 16:49:15 DEBUG shard:104 - [pianode] [piaidx][0] will apply shard started [piaidx][0], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 16:49:15 DEBUG shard:104 - [pianode] [piaidx][3] will apply shard started [piaidx][3], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 16:49:15 DEBUG local:104 - [pianode] [piaidx][1]: allocating [[piaidx][1], node[null], [P], s[UNASSIGNED]] to [[pianode][ljEf0a30QNiR0sUWVmAU6A][phannc][inet[/192.168.2.108:9300]]] on primary allocation
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] cluster state updated, version [3], source [shard-started ([piaidx][2], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] publishing cluster state version 3
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] set local cluster state to version 3
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][0] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][3] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] [piaidx][1] creating shard
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx] creating shard_id [1]
+2014-03-26 16:49:15 DEBUG deletionpolicy:104 - [pianode] [piaidx][1] Using [keep_only_last] deletion policy
+2014-03-26 16:49:15 DEBUG policy:104 - [pianode] [piaidx][1] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+2014-03-26 16:49:15 DEBUG scheduler:104 - [pianode] [piaidx][1] using [concurrent] merge scheduler with max_thread_count[3]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][1] state: [CREATED]
+2014-03-26 16:49:15 DEBUG translog:104 - [pianode] [piaidx][1] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][1] state: [CREATED]->[RECOVERING], reason [from gateway]
+2014-03-26 16:49:15 DEBUG gateway:104 - [pianode] [piaidx][1] starting recovery from local ...
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][2] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 16:49:15 DEBUG internal:104 - [pianode] [piaidx][1] starting engine
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][4] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][4] scheduling refresher every 1s
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][4] scheduling optimizer / merger every 1s
+2014-03-26 16:49:15 DEBUG gateway:104 - [pianode] [piaidx][4] recovery completed from [local], took [36ms]
+2014-03-26 16:49:15 DEBUG shard:104 - [pianode] sending shard started for [piaidx][4], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 16:49:15 DEBUG shard:104 - [pianode] received shard started for [piaidx][4], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][1] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][1] scheduling refresher every 1s
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][1] scheduling optimizer / merger every 1s
+2014-03-26 16:49:15 DEBUG gateway:104 - [pianode] [piaidx][1] recovery completed from [local], took [13ms]
+2014-03-26 16:49:15 DEBUG shard:104 - [pianode] sending shard started for [piaidx][1], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 16:49:15 DEBUG shard:104 - [pianode] received shard started for [piaidx][1], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][2], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING]), reason [after recovery from gateway]]: done applying updated cluster_state (version: 3)
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][3], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][3], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][0], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][0], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][4], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2014-03-26 16:49:15 DEBUG shard:104 - [pianode] [piaidx][4] will apply shard started [piaidx][4], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 16:49:15 DEBUG shard:104 - [pianode] [piaidx][1] will apply shard started [piaidx][1], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING], indexUUID [0i4C_-LkQ52u47N3Uojq3w], reason [after recovery from gateway]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] cluster state updated, version [4], source [shard-started ([piaidx][4], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] publishing cluster state version 4
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] set local cluster state to version 4
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][1] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] [piaidx][4] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][4], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING]), reason [after recovery from gateway]]: done applying updated cluster_state (version: 4)
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][1], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] processing [shard-started ([piaidx][1], node[ljEf0a30QNiR0sUWVmAU6A], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] processing [updating local node id]: execute
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] cluster state updated, version [5], source [updating local node id]
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] publishing cluster state version 5
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] set local cluster state to version 5
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-03-26 16:49:15 DEBUG cluster:104 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-03-26 16:49:15 DEBUG service:104 - [pianode] processing [updating local node id]: done applying updated cluster_state (version: 5)
+2014-03-26 16:49:15 INFO  node:114 - [pianode] started
+2014-03-26 16:49:25 DEBUG service:104 - [pianode] processing [routing-table-updater]: execute
+2014-03-26 16:49:25 DEBUG service:104 - [pianode] processing [routing-table-updater]: no change in cluster_state
+2014-03-26 16:49:41 DEBUG memory:104 - [pianode] recalculating shard indexing buffer (reason=active/inactive[false] created/deleted[true]), total is [179.3mb] with [5] active shards, each shard set to indexing=[35.8mb], translog=[64kb]
+2014-03-26 16:49:41 DEBUG internal:104 - [pianode] [piaidx][0] updating index_buffer_size from [64mb] to [35.8mb]
+2014-03-26 16:49:41 DEBUG internal:104 - [pianode] [piaidx][1] updating index_buffer_size from [64mb] to [35.8mb]
+2014-03-26 16:49:41 DEBUG internal:104 - [pianode] [piaidx][2] updating index_buffer_size from [64mb] to [35.8mb]
+2014-03-26 16:49:41 DEBUG internal:104 - [pianode] [piaidx][3] updating index_buffer_size from [64mb] to [35.8mb]
+2014-03-26 16:49:41 DEBUG internal:104 - [pianode] [piaidx][4] updating index_buffer_size from [64mb] to [35.8mb]
+2014-03-26 17:20:41 DEBUG memory:104 - [pianode] marking shard [piaidx][0] as inactive (inactive_time[30m]) indexing wise, setting size to [500kb]
+2014-03-26 17:20:41 DEBUG memory:104 - [pianode] marking shard [piaidx][1] as inactive (inactive_time[30m]) indexing wise, setting size to [500kb]
+2014-03-26 17:20:41 DEBUG memory:104 - [pianode] marking shard [piaidx][2] as inactive (inactive_time[30m]) indexing wise, setting size to [500kb]
+2014-03-26 17:20:41 DEBUG memory:104 - [pianode] marking shard [piaidx][3] as inactive (inactive_time[30m]) indexing wise, setting size to [500kb]
+2014-03-26 17:20:41 DEBUG memory:104 - [pianode] marking shard [piaidx][4] as inactive (inactive_time[30m]) indexing wise, setting size to [500kb]
+2014-03-26 17:20:41 DEBUG internal:104 - [pianode] [piaidx][0] updating index_buffer_size from [35.8mb] to (inactive) [500kb]
+2014-03-26 17:20:41 DEBUG internal:104 - [pianode] [piaidx][1] updating index_buffer_size from [35.8mb] to (inactive) [500kb]
+2014-03-26 17:20:41 DEBUG internal:104 - [pianode] [piaidx][2] updating index_buffer_size from [35.8mb] to (inactive) [500kb]
+2014-03-26 17:20:41 DEBUG internal:104 - [pianode] [piaidx][3] updating index_buffer_size from [35.8mb] to (inactive) [500kb]
+2014-03-26 17:20:41 DEBUG internal:104 - [pianode] [piaidx][4] updating index_buffer_size from [35.8mb] to (inactive) [500kb]
+2014-11-29 18:01:17 INFO  PiConfig:34 - Read OK config file:piconfig.properties
+2014-11-29 18:01:19 INFO  node:139 - [pianode] version[1.4.0], pid[1144], build[bc94bd8/2014-11-05T14:26:12Z]
+2014-11-29 18:01:19 INFO  node:141 - [pianode] initializing ...
+2014-11-29 18:01:19 DEBUG node:145 - [pianode] using home [/Volumes/Data2/Cloud Drivers/Google Drive/Projects/PiArchiver/PiArchiverLocal/20140330/PiArchiverLocal], config [/Volumes/Data2/Cloud Drivers/Google Drive/Projects/PiArchiver/PiArchiverLocal/20140330/PiArchiverLocal/config], data [[C:/Users/phan/AppData/Roaming/piarchiver/data]], logs [/Volumes/Data2/Cloud Drivers/Google Drive/Projects/PiArchiver/PiArchiverLocal/20140330/PiArchiverLocal/logs], work [/Volumes/Data2/Cloud Drivers/Google Drive/Projects/PiArchiver/PiArchiverLocal/20140330/PiArchiverLocal/work], plugins [/Volumes/Data2/Cloud Drivers/Google Drive/Projects/PiArchiver/PiArchiverLocal/20140330/PiArchiverLocal/plugins]
+2014-11-29 18:01:19 DEBUG plugins:168 - [pianode] [/Volumes/Data2/Cloud Drivers/Google Drive/Projects/PiArchiver/PiArchiverLocal/20140330/PiArchiverLocal/plugins] directory does not exist.
+2014-11-29 18:01:19 INFO  plugins:150 - [pianode] loaded [], sites []
+2014-11-29 18:01:19 DEBUG lzf:55 - using encoder [VanillaChunkDecoder] and decoder[{}] 
+2014-11-29 18:01:19 DEBUG env:123 - [pianode] using node location [[C:/Users/phan/AppData/Roaming/piarchiver/data/piacluster/nodes/0]], local_node_id [0]
+2014-11-29 18:01:21 DEBUG script:87 - [pianode] failed to load groovy
+java.lang.ClassNotFoundException: groovy.lang.GroovyClassLoader
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:50)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.unsynchronizedLoadClass(ClassRealm.java:259)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:235)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:227)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:436)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:389)
+	at org.elasticsearch.script.ScriptModule.configure(ScriptModule.java:84)
+	at org.elasticsearch.common.inject.AbstractModule.configure(AbstractModule.java:60)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:204)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:85)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:130)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:99)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:93)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:59)
+	at org.elasticsearch.node.internal.InternalNode.<init>(InternalNode.java:197)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:159)
+	at org.elasticsearch.node.NodeBuilder.node(NodeBuilder.java:166)
+	at com.piarchiverlocal.elasticsearch.ClientProvider.prepareClient(ClientProvider.java:31)
+	at com.piarchiverlocal.process.async.AppContextListener.contextInitialized(AppContextListener.java:31)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:801)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:446)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:793)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:296)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1347)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:745)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:282)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:99)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:154)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:99)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.Server.start(Server.java:358)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:99)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:325)
+	at org.eclipse.jetty.maven.plugin.JettyServer.doStart(JettyServer.java:68)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:564)
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:360)
+	at org.eclipse.jetty.maven.plugin.JettyRunMojo.execute(JettyRunMojo.java:168)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:132)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:120)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:347)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:154)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:582)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:214)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+2014-11-29 18:01:21 DEBUG script:101 - [pianode] failed to load lucene expressions
+java.lang.ClassNotFoundException: org.apache.lucene.expressions.Expression
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:50)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.unsynchronizedLoadClass(ClassRealm.java:259)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:235)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:227)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:436)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:389)
+	at org.elasticsearch.script.ScriptModule.configure(ScriptModule.java:98)
+	at org.elasticsearch.common.inject.AbstractModule.configure(AbstractModule.java:60)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:204)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:85)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:130)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:99)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:93)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:59)
+	at org.elasticsearch.node.internal.InternalNode.<init>(InternalNode.java:197)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:159)
+	at org.elasticsearch.node.NodeBuilder.node(NodeBuilder.java:166)
+	at com.piarchiverlocal.elasticsearch.ClientProvider.prepareClient(ClientProvider.java:31)
+	at com.piarchiverlocal.process.async.AppContextListener.contextInitialized(AppContextListener.java:31)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:801)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:446)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:793)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:296)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1347)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:745)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:282)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:99)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:154)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:99)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.Server.start(Server.java:358)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:99)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:325)
+	at org.eclipse.jetty.maven.plugin.JettyServer.doStart(JettyServer.java:68)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:564)
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:360)
+	at org.eclipse.jetty.maven.plugin.JettyRunMojo.execute(JettyRunMojo.java:168)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:132)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:120)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:347)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:154)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:582)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:214)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+2014-11-29 18:01:26 DEBUG threadpool:329 - [pianode] creating thread_pool [generic], type [cached], keep_alive [30s]
+2014-11-29 18:01:26 DEBUG threadpool:359 - [pianode] creating thread_pool [index], type [fixed], size [4], queue_size [200]
+2014-11-29 18:01:26 DEBUG threadpool:359 - [pianode] creating thread_pool [bulk], type [fixed], size [4], queue_size [50]
+2014-11-29 18:01:26 DEBUG threadpool:359 - [pianode] creating thread_pool [get], type [fixed], size [4], queue_size [1k]
+2014-11-29 18:01:26 DEBUG threadpool:359 - [pianode] creating thread_pool [search], type [fixed], size [12], queue_size [1k]
+2014-11-29 18:01:26 DEBUG threadpool:359 - [pianode] creating thread_pool [suggest], type [fixed], size [4], queue_size [1k]
+2014-11-29 18:01:26 DEBUG threadpool:359 - [pianode] creating thread_pool [percolate], type [fixed], size [4], queue_size [1k]
+2014-11-29 18:01:26 DEBUG threadpool:402 - [pianode] creating thread_pool [management], type [scaling], min [1], size [5], keep_alive [5m]
+2014-11-29 18:01:26 DEBUG threadpool:359 - [pianode] creating thread_pool [listener], type [fixed], size [2], queue_size [null]
+2014-11-29 18:01:26 DEBUG threadpool:402 - [pianode] creating thread_pool [flush], type [scaling], min [1], size [2], keep_alive [5m]
+2014-11-29 18:01:26 DEBUG threadpool:402 - [pianode] creating thread_pool [merge], type [scaling], min [1], size [2], keep_alive [5m]
+2014-11-29 18:01:26 DEBUG threadpool:402 - [pianode] creating thread_pool [refresh], type [scaling], min [1], size [2], keep_alive [5m]
+2014-11-29 18:01:26 DEBUG threadpool:402 - [pianode] creating thread_pool [warmer], type [scaling], min [1], size [2], keep_alive [5m]
+2014-11-29 18:01:26 DEBUG threadpool:402 - [pianode] creating thread_pool [snapshot], type [scaling], min [1], size [2], keep_alive [5m]
+2014-11-29 18:01:26 DEBUG threadpool:359 - [pianode] creating thread_pool [optimize], type [fixed], size [1], queue_size [null]
+2014-11-29 18:01:26 DEBUG threadpool:402 - [pianode] creating thread_pool [bench], type [scaling], min [1], size [2], keep_alive [5m]
+2014-11-29 18:01:26 DEBUG jvm:111 - [pianode] enabled [true], last_gc_enabled [false], interval [1s], gc_threshold [{old=GcThreshold{name='old', warnThreshold=10000, infoThreshold=5000, debugThreshold=2000}, default=GcThreshold{name='default', warnThreshold=10000, infoThreshold=5000, debugThreshold=2000}, young=GcThreshold{name='young', warnThreshold=1000, infoThreshold=700, debugThreshold=400}}]
+2014-11-29 18:01:26 DEBUG os:52 - [pianode] Using probe [org.elasticsearch.monitor.os.JmxOsProbe@785006ce] with refresh_interval [1s]
+2014-11-29 18:01:26 DEBUG process:51 - [pianode] Using probe [org.elasticsearch.monitor.process.JmxProcessProbe@1c8bee3] with refresh_interval [1s]
+2014-11-29 18:01:26 DEBUG jvm:46 - [pianode] Using refresh_interval [1s]
+2014-11-29 18:01:26 DEBUG network:51 - [pianode] Using probe [org.elasticsearch.monitor.network.JmxNetworkProbe@cf3b41b] with refresh_interval [5s]
+2014-11-29 18:01:26 DEBUG network:101 - [pianode] net_info
+host [PhanMBP.local]
+en1	display_name [en1]
+		address [/fe80:0:0:0:5e96:9dff:fe96:d92d%5] [/192.168.1.4] 
+		mtu [1500] multicast [true] ptp [false] loopback [false] up [true] virtual [false]
+lo0	display_name [lo0]
+		address [/fe80:0:0:0:0:0:0:1%1] [/0:0:0:0:0:0:0:1] [/127.0.0.1] 
+		mtu [16384] multicast [true] ptp [false] loopback [true] up [true] virtual [false]
+
+2014-11-29 18:01:26 DEBUG fs:45 - [pianode] Using probe [org.elasticsearch.monitor.fs.JmxFsProbe@3fa8b983] with refresh_interval [1s]
+2014-11-29 18:01:26 DEBUG netty:104 - using gathering [true]
+2014-11-29 18:01:26 DEBUG elect:47 - [pianode] using minimum_master_nodes [-1]
+2014-11-29 18:01:26 DEBUG multicast:107 - [pianode] using group [224.2.2.4], with port [54328], ttl [3], and address [null]
+2014-11-29 18:01:26 DEBUG unicast:129 - [pianode] using initial hosts [], with concurrent_connects [10]
+2014-11-29 18:01:26 DEBUG zen:179 - [pianode] using ping.timeout [3s], join.timeout [1m], master_election.filter_client [true], master_election.filter_data [false]
+2014-11-29 18:01:26 DEBUG fd:77 - [pianode] [master] uses ping_interval [1s], ping_timeout [30s], ping_retries [3]
+2014-11-29 18:01:26 DEBUG fd:67 - [pianode] [node  ] uses ping_interval [1s], ping_timeout [30s], ping_retries [3]
+2014-11-29 18:01:27 DEBUG store:122 - [pianode] using indices.store.throttle.type [MERGE], with index.store.throttle.max_bytes_per_sec [20mb]
+2014-11-29 18:01:27 DEBUG script:219 - [pianode] using script cache with max_size [100], expire [null]
+2014-11-29 18:01:28 DEBUG decider:71 - [pianode] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+2014-11-29 18:01:28 DEBUG decider:108 - [pianode] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+2014-11-29 18:01:28 DEBUG decider:63 - [pianode] using [cluster_concurrent_rebalance] with [2]
+2014-11-29 18:01:28 DEBUG local:85 - [pianode] using initial_shards [quorum], list_timeout [30s]
+2014-11-29 18:01:28 DEBUG recovery:91 - [pianode] using max_bytes_per_sec[20mb], concurrent_streams [3], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+2014-11-29 18:01:30 DEBUG netty:191 - [pianode] using max_chunk_size[8kb], max_header_size[8kb], max_initial_line_length[4kb], max_content_length[100mb], receive_predictor[512kb->512kb], pipelining[true], pipelining_max_events[10000]
+2014-11-29 18:01:30 DEBUG memory:122 - [pianode] using index_buffer_size [91mb], with min_shard_index_buffer_size [4mb], max_shard_index_buffer_size [512mb], shard_inactive_time [30m]
+2014-11-29 18:01:30 DEBUG filter:125 - [pianode] using [node] weighted filter cache with size [10%], actual_size [91mb], expire [null], clean_interval [1m]
+2014-11-29 18:01:30 DEBUG cache:88 - [pianode] using size [-1] [-1b], expire [null]
+2014-11-29 18:01:30 DEBUG meta:147 - [pianode] using gateway.local.auto_import_dangled [YES], with gateway.local.dangling_timeout [2h]
+2014-11-29 18:01:30 DEBUG meta:154 - [pianode] took 0s to load state
+2014-11-29 18:01:30 DEBUG shards:71 - [pianode] took 0s to load started shards state
+2014-11-29 18:01:30 DEBUG udp:92 - [pianode] using enabled [false], host [null], port [9700-9800], bulk_actions [1000], bulk_size [5mb], flush_interval [5s], concurrent_requests [4]
+2014-11-29 18:01:31 INFO  node:207 - [pianode] initialized
+2014-11-29 18:01:31 INFO  node:226 - [pianode] starting ...
+2014-11-29 18:01:32 DEBUG SelectorUtil:58 - Using select timeout of 500
+2014-11-29 18:01:32 DEBUG SelectorUtil:58 - Epoll-bug workaround enabled = false
+2014-11-29 18:01:33 DEBUG netty:443 - [pianode] using profile[default], worker_count[8], port[9300-9400], bind_host[null], publish_host[null], compress[false], connect_timeout[30s], connections_per_node[2/3/6/1/1], receive_predictor[512kb->512kb]
+2014-11-29 18:01:34 DEBUG netty:429 - [pianode] Bound profile [default] to address [/0:0:0:0:0:0:0:0:9301]
+2014-11-29 18:01:34 INFO  transport:93 - [pianode] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.1.4:9301]}
+2014-11-29 18:01:34 INFO  discovery:85 - [pianode] piacluster/p1u8ltSnT9mKHf9LJarOKw
+2014-11-29 18:01:34 DEBUG service:320 - [pianode] processing [initial_join]: execute
+2014-11-29 18:01:34 DEBUG service:343 - [pianode] processing [initial_join]: no change in cluster_state
+2014-11-29 18:01:35 DEBUG netty:751 - [pianode] connected to node [[pianode][p1u8ltSnT9mKHf9LJarOKw][PhanMBP.local][inet[/192.168.1.4:9301]]]
+2014-11-29 18:01:38 DEBUG zen:976 - [pianode] filtered ping responses: (filter_client[true], filter_data[false]) {none}
+2014-11-29 18:01:38 DEBUG service:320 - [pianode] processing [zen-disco-join (elected_as_master)]: execute
+2014-11-29 18:01:38 DEBUG service:392 - [pianode] cluster state updated, version [1], source [zen-disco-join (elected_as_master)]
+2014-11-29 18:01:38 INFO  service:401 - [pianode] new_master [pianode][p1u8ltSnT9mKHf9LJarOKw][PhanMBP.local][inet[/192.168.1.4:9301]], reason: zen-disco-join (elected_as_master)
+2014-11-29 18:01:38 DEBUG service:422 - [pianode] publishing cluster state version 1
+2014-11-29 18:01:38 DEBUG service:428 - [pianode] set local cluster state to version 1
+2014-11-29 18:01:38 DEBUG cluster:106 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-11-29 18:01:38 DEBUG cluster:148 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-11-29 18:01:38 DEBUG service:463 - [pianode] processing [zen-disco-join (elected_as_master)]: done applying updated cluster_state (version: 1)
+2014-11-29 18:01:38 DEBUG service:320 - [pianode] processing [local-gateway-elected-state]: execute
+2014-11-29 18:01:38 DEBUG service:392 - [pianode] cluster state updated, version [2], source [local-gateway-elected-state]
+2014-11-29 18:01:38 DEBUG service:422 - [pianode] publishing cluster state version 2
+2014-11-29 18:01:38 DEBUG service:428 - [pianode] set local cluster state to version 2
+2014-11-29 18:01:39 DEBUG cluster:106 - [pianode] processing [reroute_rivers_node_changed]: execute
+2014-11-29 18:01:39 DEBUG cluster:148 - [pianode] processing [reroute_rivers_node_changed]: no change in cluster_state
+2014-11-29 18:01:39 INFO  http:91 - [pianode] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.1.4:9201]}
+2014-11-29 18:01:39 INFO  node:261 - [pianode] started
+2014-11-29 18:01:39 INFO  gateway:272 - [pianode] recovered [0] indices into cluster_state
+2014-11-29 18:01:39 DEBUG service:463 - [pianode] processing [local-gateway-elected-state]: done applying updated cluster_state (version: 2)
+2014-11-29 18:01:48 DEBUG service:320 - [pianode] processing [routing-table-updater]: execute
+2014-11-29 18:01:48 DEBUG service:343 - [pianode] processing [routing-table-updater]: no change in cluster_state
